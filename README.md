@@ -20,4 +20,5 @@ The program is buttoned up into an executable file for use by the drafting staff
 - Existing ??? (.std file)
 - Proposed system fault??? (.rsl file)
 - Proposed ??? (.std file)
+
 Different element information is contained within each file, so both exports were necessary for the program to function. The .std file contains element device type and multi-parent node information. These two pieces of information were essential for the calculation of accumulated voltage drop. The device type enabled the identification voltage regulators through the system. The multi-parent node information allowed a work-around for a major obstacle in electric networks - nodes.  For most three-phase conductors and devices on the system, WindMil treats them as one element and therefore only one parent is assigned. For instances where each of the three phases has a different parent, the analysis software inserts multi-parent nodes to account for this.
