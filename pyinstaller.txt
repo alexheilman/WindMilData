@@ -1,3 +1,0 @@
-cd C:\Users\aheilman\Desktop\Programs
-
-pyinstaller -F WindMil.py
