@@ -5,7 +5,7 @@ WindMil is a software that leverages GIS databases to create flowable electric m
 
 | WindMil Engineering Software |  AutoCAD Map Deliverable  |
 | --- | --- |
-| <img src="https://github.com/alexheilman/WindMilData/blob/master/Electric%20System%20-%20WindMil.PNG?raw=true" width="402" height="451">  |  <img src="https://github.com/alexheilman/WindMilData/blob/master/Electric%20System%20-%20Map%20Deliverable.PNG?raw=true" width="368" height="451"> |
+| <img src="https://github.com/alexheilman/WindMilData/blob/master/Images/Electric%20System%20-%20WindMil.PNG?raw=true" width="402" height="451">  |  <img src="https://github.com/alexheilman/WindMilData/blob/master/Images/Electric%20System%20-%20Map%20Deliverable.PNG?raw=true" width="368" height="451"> |
 
 ### Description
 The WindMil Data program pulls in the exported simulation data from an existing electric system model and also a proposed electric system model.  This enables the consultant to analyze the before and after effects of electric infrastructure upgrades for each individual element in the network. The program wrangles and calculates the following data for all n elements in both model exports into one OUTPUT DATA.csv file:
