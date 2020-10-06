@@ -14,6 +14,11 @@ P_STD_file = 'null'
 start_time = 0
 data_types = 0
 
+# initialize voltage drop dictionaries globally (used across functions)
+a_dict = {} # a-phase dictionary
+b_dict = {} # b-phase dictionary
+c_dict = {} # c-phase dictionary
+
 def main():
     E_RSL_file, E_STD_file, P_RSL_file, P_STD_file = FileLocator()
 
@@ -22,7 +27,7 @@ def main():
 
     if E_RSL_file == 'null' or E_STD_file == 'null' or P_RSL_file == 'null' or P_STD_file == 'null':
         Status("ERROR - One or more files not selected.")
-        print('PROGRAM TERMINATED')
+        input("PROGRAM TERMINATED")
         quit()
 
     else:
@@ -72,7 +77,7 @@ def main():
 def FileLocator():
     # mainloop settings
     root = tk.Tk()
-    root.title('WindMil Data 1.0')
+    root.title('WindMil Data 1.1')
     root.geometry("700x222")
     root.grid_columnconfigure(0, weight = 1)
     root.grid_columnconfigure(1, weight=10000) # put weight in column 2, to make column 1 as small as possible
@@ -215,7 +220,6 @@ def ImportData(FileName):
                   device[1], voltage[1], maxfault[1], row[1]]
 
     # Create array of data - skip first row header (1:) and specified column
-
     data = np.rec.array([data[:, name[0]],      data[:, parent[0]],    data[:, phasing[0]],   \
                         data[:, miles[0]],      data[:, volta[0]],     data[:, voltb[0]],     \
                         data[:, voltc[0]],      data[:, sdropa[0]],    data[:, sdropb[0]],    \
@@ -265,7 +269,7 @@ def MinVoltage(data):
 def STDFileData(data, FileName):
     ThisFileSTD = FileName
     ThisFileCSV = FileName[:-4] + ".csv"
-    shutil.copyfile(ThisFileSTD, ThisFileCSV)  # Copy STD as a CSV
+    shutil.copyfile(ThisFileSTD, ThisFileCSV)
 
     # Read in STD from CSV copy - np.loadtxt has issues with varying columns by row, so only columns = 0,1 read in
     std = np.loadtxt(ThisFileCSV, dtype='U25', delimiter=",", comments=None, skiprows=1, usecols = (0,1))
@@ -275,8 +279,6 @@ def STDFileData(data, FileName):
 
     # STD file has varying columns which loadtxt cannot handle. Only read in columns 27,28,29 of STD
     # which are the multi-parents for nodes (device = 8)
-
-
     for i in range(0,len(data)):
         # find every node's phase-specific parents
         if std.device[i] == 8:
@@ -296,9 +298,8 @@ def STDFileData(data, FileName):
     # this error can occur if an existing RSL is paired with a proposed STD
     for i in range(0,len(data)):
         if data.device[i] == 0:
-            Status('ERROR - One or more device codes not matched in. Verify STD and RSL files exported from same model.')
-            print('PROGRAM TERMINATED')
-            input("Press Enter to complete.")
+            Status('ERROR - One or more device codes not matched in. Verify STD and RSL files exported from model simultaneously.')
+            input('PROGRAM TERMINATED')
             quit()
 
     return data
@@ -330,14 +331,12 @@ def Counter(i, n):
     sys.stdout.write(' elements')
 
 def DropAccumulator(data):
-    # accumulated drop
-
     # handle all nodes first with raw section voltage drops
     # the next sequence overwrites these values for the accumulated voltage drop
     node_time = time.time()
     node_count = 0
     for i in range(0,len(data)):
-        if data.device[i] == 8: # For nodes, look for parent of each phase and add drop separately
+        if data.device[i] == 8: # Nodes == 8, look for node parent of each phase and add drop separately
             Counter(i, len(data))
             sys.stdout.write('\t')
             sys.stdout.write('*NODE* - Time intensive nodes calculated first.')
@@ -351,12 +350,17 @@ def DropAccumulator(data):
     for i in range(0,len(data)):
         if data.device[i] != 8: # For all other devices, parent's section drop for all phases valid
             Counter(i, len(data))
-            for j in reversed(range(0,i)): # start at i and count downwards (up the matrix) to find parent (parent always above)
-                if data.parent[i] == data.name[j]:
-                    data.sdropa[i] = data.sdropa[i] + data.sdropa[j] ## Add parent section drop to element section drop
-                    data.sdropb[i] = data.sdropb[i] + data.sdropb[j] ## Add parent section drop to element section drop
-                    data.sdropc[i] = data.sdropc[i] + data.sdropc[j] ## Add parent section drop to element section drop
-                    break
+
+            if data.parent[i] in a_dict:
+                data.sdropa[i] = data.sdropa[i] + a_dict[data.parent[i]]      
+            if data.parent[i] in b_dict:
+                data.sdropb[i] = data.sdropb[i] + b_dict[data.parent[i]]    
+            if data.parent[i] in c_dict:
+                data.sdropc[i] = data.sdropc[i] + c_dict[data.parent[i]]
+                
+            a_dict[data.name[i]] = data.sdropa[i]   # store a-phase voltage drop for current element in dictionary
+            b_dict[data.name[i]] = data.sdropb[i]   # store b-phase voltage drop for current element in dictionary
+            c_dict[data.name[i]] = data.sdropc[i]   # store c-phase voltage drop for current element in dictionary            
 
     # pick one drop value using element phasing
     print('\n','           Identifying maximum phase drop per element.')
@@ -474,10 +478,16 @@ def NodeDropAccumulator(data, x):
         if chain_name_c[-1] == 'ROOT':                                      # checks last entry to see if ROOT
             break
 
-
-    data.sdropa[x] = sum(chain_drop_a)
+    # sum drop from source to element for accumulated voltage drop
+    data.sdropa[x] = sum(chain_drop_a)         
     data.sdropb[x] = sum(chain_drop_b)
     data.sdropc[x] = sum(chain_drop_c)
+
+    # store the results for nodes in global dictionaries
+    a_dict[data.name[x]] = data.sdropa[x]   # a-phase voltage drop
+    b_dict[data.name[x]] = data.sdropb[x]   # b-phase voltage drop
+    c_dict[data.name[x]] = data.sdropc[x]   # c-phase voltage drop         
+
     return
 
 def RegulatorVoltageCorrection(data):
@@ -581,15 +591,13 @@ def Finishing(data):
         data.p_ampsc[i] = round(data.p_ampsc[i], 1)
 
     header_formatting = '{0:^5s}\n\n{1:^5s}'
-    header_text = 16*' ' + '|'+ 45*'-' + 'Existing' + 46*'-' + '|' + 45*'-' + 'Proposed' + 45*'-' + '|'
+    header_line1 = ',Existing,,,,,,,,Proposed,,,,,,,,'
+    header_line3 = 'Voltage,Acc Drop,Miles,I AØ,I BØ,I CØ,Min(Flt),Max(Flt),'
+    output_header = header_formatting.format(header_line1, 'Names,' + header_line3 + header_line3)
 
-    output_header = header_formatting.format(header_text, \
-                                             'Names     Voltage     Acc Drop      Miles            I AØ'+\
-                                             '             I BØ            I CØ          Min(Flt)    Max(Flt)    '+\
-                                             'Voltage     Acc Drop      Miles            I AØ'+\
-                                             '             I BØ            I CØ          Min(Flt)    Max(Flt) ')
     np.savetxt("OUTPUT DATA.csv", data, fmt='%s', delimiter=',', header=output_header)
 
     return data
 
 main()
+
