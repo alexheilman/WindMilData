@@ -1,0 +1,1001 @@
+HANDLE	BLOCKNAME	LAYER	DEVICE	LINE1	LINE2	LINE3	MAX	MIN	{DYNPARAM} Visibility1	VOLTS	DROP	DIFF	DIST
+'719FF3D	Load_Currents	_Currents	R16038	A55.5	B14.7	C14.5	<>	<>	<>	<>	<>	<>	<>
+'719FF57	Fault_Currents	_Fault Currents	R16038	<>	<>	<>	10	14	Wipeout ON	<>	<>	<>	<>
+'719FF80	Load_Currents	_Currents	R158	A53.1	B12.5	C27.4	<>	<>	<>	<>	<>	<>	<>
+'719FF9A	Fault_Currents	_Fault Currents	R158	<>	<>	<>	3	12	Wipeout ON	<>	<>	<>	<>
+'719FFB9	Load_Currents	_Currents	R155	A53.2	B12.5	C26.1	<>	<>	<>	<>	<>	<>	<>
+'719FFD3	Fault_Currents	_Fault Currents	R155	<>	<>	<>	18	12	Wipeout ON	<>	<>	<>	<>
+'71A0016	Load_Currents	_Currents	R18455	A22.5	B8.9		<>	<>	<>	<>	<>	<>	<>
+'71A0030	Fault_Currents	_Fault Currents	R18455	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'71A004F	Load_Currents	_Currents	R154	A47.3	B9.0	C65.8	<>	<>	<>	<>	<>	<>	<>
+'71A0069	Fault_Currents	_Fault Currents	R154	<>	<>	<>	31	9	Wipeout ON	<>	<>	<>	<>
+'71A0087	Load_Currents	_Currents	R18859	A33.1	B21.3		<>	<>	<>	<>	<>	<>	<>
+'71A00A1	Fault_Currents	_Fault Currents	R18859	<>	<>	<>	0	21	Wipeout ON	<>	<>	<>	<>
+'71A00C0	Load_Currents	_Currents	R18858	A24.9	B15.6		<>	<>	<>	<>	<>	<>	<>
+'71A00DA	Fault_Currents	_Fault Currents	R18858	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71A0118	Voltage_Box	_Voltages	RG22202	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	251.0	106.6
+'71A0141	Load_Currents	_Currents	R1494	A56.7	B15.4	C21.6	<>	<>	<>	<>	<>	<>	<>
+'71A015B	Fault_Currents	_Fault Currents	R1494	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71A017A	Load_Currents	_Currents	R14835	A6.1	B7.1	C9.1	<>	<>	<>	<>	<>	<>	<>
+'71A0194	Fault_Currents	_Fault Currents	R14835	<>	<>	<>	9	7	Wipeout ON	<>	<>	<>	<>
+'71A01B3	Load_Currents	_Currents	R135	A5.2	B4.8		<>	<>	<>	<>	<>	<>	<>
+'71A01CD	Fault_Currents	_Fault Currents	R135	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'71A01E2	Load_Currents	_Currents	R6336	A10.2	B7.8	C20.4	<>	<>	<>	<>	<>	<>	<>
+'71A01FC	Fault_Currents	_Fault Currents	R6336	<>	<>	<>	14	7	Wipeout ON	<>	<>	<>	<>
+'71A0225	Load_Currents	_Currents	R137	A10.7	B8.8	C11.7	<>	<>	<>	<>	<>	<>	<>
+'71A023F	Fault_Currents	_Fault Currents	R137	<>	<>	<>	10	8	Wipeout ON	<>	<>	<>	<>
+'71A025E	Load_Currents	_Currents	R15235	A3.9	B4.2		<>	<>	<>	<>	<>	<>	<>
+'71A0278	Fault_Currents	_Fault Currents	R15235	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'71A028D	Load_Currents	_Currents	R693	A17.0	B9.4		<>	<>	<>	<>	<>	<>	<>
+'71A02A7	Fault_Currents	_Fault Currents	R693	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71A02BC	Load_Currents	_Currents	R132	A4.0	B3.1	C10.2	<>	<>	<>	<>	<>	<>	<>
+'71A02D6	Fault_Currents	_Fault Currents	R132	<>	<>	<>	10	3	Wipeout ON	<>	<>	<>	<>
+'71A02F5	Load_Currents	_Currents	R15234	A4.1	B3.2	C31.5	<>	<>	<>	<>	<>	<>	<>
+'71A030F	Fault_Currents	_Fault Currents	R15234	<>	<>	<>	25	3	Wipeout ON	<>	<>	<>	<>
+'71A0338	Load_Currents	_Currents	R5525	A3.1	B2.2		<>	<>	<>	<>	<>	<>	<>
+'71A0352	Fault_Currents	_Fault Currents	R5525	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'71A0371	Voltage_Box	_Voltages	PC136033	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	286.0	113.1
+'71A03A4	Load_Currents	_Currents	R138	A15.5	B12.7		<>	<>	<>	<>	<>	<>	<>
+'71A03BE	Fault_Currents	_Fault Currents	R138	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71A03DD	Load_Currents	_Currents	R139	A10.2	B16.0		<>	<>	<>	<>	<>	<>	<>
+'71A03F7	Fault_Currents	_Fault Currents	R139	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71A040C	Load_Currents	_Currents	R140	A17.2	B17.9	C2.2	<>	<>	<>	<>	<>	<>	<>
+'71A0426	Fault_Currents	_Fault Currents	R140	<>	<>	<>	2	9	Wipeout ON	<>	<>	<>	<>
+'71A0488	Load_Currents	_Currents	R16437	A2.5	B4.1	C23.0	<>	<>	<>	<>	<>	<>	<>
+'71A04A2	Fault_Currents	_Fault Currents	R16437	<>	<>	<>	26	4	Wipeout ON	<>	<>	<>	<>
+'71A04C1	Load_Currents	_Currents	R143	A2.4	B4.0	C5.2	<>	<>	<>	<>	<>	<>	<>
+'71A04DB	Fault_Currents	_Fault Currents	R143	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'71A04FA	Load_Currents	_Currents	R142	A0.6	B3.4		<>	<>	<>	<>	<>	<>	<>
+'71A0514	Fault_Currents	_Fault Currents	R142	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'71AA0A7	Voltage_Box	_Voltages	RG20060	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	495.0	109.2
+'71AA0D1	Load_Currents	_Currents	R16440	A17.2	B6.3	C18.0	<>	<>	<>	<>	<>	<>	<>
+'71AA0EB	Fault_Currents	_Fault Currents	R16440	<>	<>	<>	16	6	Wipeout ON	<>	<>	<>	<>
+'71AA114	Load_Currents	_Currents	R293	A17.2	B6.2	C11.2	<>	<>	<>	<>	<>	<>	<>
+'71AA12E	Fault_Currents	_Fault Currents	R293	<>	<>	<>	10	6	Wipeout ON	<>	<>	<>	<>
+'71AA143	Load_Currents	_Currents	R144	A7.3	B2.2		<>	<>	<>	<>	<>	<>	<>
+'71AA15D	Fault_Currents	_Fault Currents	R144	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'71AA186	Load_Currents	_Currents	R16439	A12.0	B2.4	C28.7	<>	<>	<>	<>	<>	<>	<>
+'71AA1A0	Fault_Currents	_Fault Currents	R16439	<>	<>	<>	26	2	Wipeout ON	<>	<>	<>	<>
+'71AA1BF	Load_Currents	_Currents	R1093	A12.3	B2.5	C229.6	<>	<>	<>	<>	<>	<>	<>
+'71AA1D9	Fault_Currents	_Fault Currents	R1093	<>	<>	<>	136	2	Wipeout ON	<>	<>	<>	<>
+'71AA1F8	Load_Currents	_Currents	R15237	A14.8	B4.5		<>	<>	<>	<>	<>	<>	<>
+'71AA212	Fault_Currents	_Fault Currents	R15237	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'71AA230	Load_Currents	_Currents	R1493	A20.9	B6.3		<>	<>	<>	<>	<>	<>	<>
+'71AA24A	Fault_Currents	_Fault Currents	R1493	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'71AA269	Voltage_Box	_Voltages	PC125224	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	593.0	88.3
+'71AA294	Load_Currents	_Currents	R11609	A3.0	B6.9	C23.6	<>	<>	<>	<>	<>	<>	<>
+'71AA2CD	Fault_Currents	_Fault Currents	R11609	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'71AA338	Load_Currents	_Currents	R19260	A4.9	B11.2		<>	<>	<>	<>	<>	<>	<>
+'71AA352	Fault_Currents	_Fault Currents	R19260	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71AA371	Load_Currents	_Currents	R19661	A4.8	B9.1	C17.4	<>	<>	<>	<>	<>	<>	<>
+'71AA38B	Fault_Currents	_Fault Currents	R19661	<>	<>	<>	17	9	Wipeout ON	<>	<>	<>	<>
+'71AA3AA	Load_Currents	_Currents	R10404	A4.1	B7.4		<>	<>	<>	<>	<>	<>	<>
+'71AA3C4	Fault_Currents	_Fault Currents	R10404	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'71AA3ED	Voltage_Box	_Voltages	PC3266	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	559.0	122.0
+'71AA41F	Load_Currents	_Currents	R4302	A3.2	B5.0	C10.7	<>	<>	<>	<>	<>	<>	<>
+'71AA439	Fault_Currents	_Fault Currents	R4302	<>	<>	<>	10	5	Wipeout ON	<>	<>	<>	<>
+'71AA458	Load_Currents	_Currents	R274	A2.8	B4.1	C30.5	<>	<>	<>	<>	<>	<>	<>
+'71AA472	Fault_Currents	_Fault Currents	R274	<>	<>	<>	30	4	Wipeout ON	<>	<>	<>	<>
+'71AA491	Load_Currents	_Currents	R3903	A1.7	B2.1	C5.1	<>	<>	<>	<>	<>	<>	<>
+'71AA4AB	Fault_Currents	_Fault Currents	R3903	<>	<>	<>	5	2	Wipeout ON	<>	<>	<>	<>
+'71AA4CA	Load_Currents	_Currents	R10403	A1.2	B1.6		<>	<>	<>	<>	<>	<>	<>
+'71AA4E4	Fault_Currents	_Fault Currents	R10403	<>	<>	<>	0	1	Wipeout ON	<>	<>	<>	<>
+'71AA503	Load_Currents	_Currents	R69	A3.3	B5.5		<>	<>	<>	<>	<>	<>	<>
+'71AA51D	Fault_Currents	_Fault Currents	R69	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'71AA53C	Load_Currents	_Currents	R11606	A1.0	B5.4	C7.8	<>	<>	<>	<>	<>	<>	<>
+'71AA556	Fault_Currents	_Fault Currents	R11606	<>	<>	<>	7	5	Wipeout ON	<>	<>	<>	<>
+'71AA56B	Load_Currents	_Currents	R11204	A1.6	B3.5		<>	<>	<>	<>	<>	<>	<>
+'71AA585	Fault_Currents	_Fault Currents	R11204	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'71AA5DD	Load_Currents	_Currents	R11607	A1.4	B8.3		<>	<>	<>	<>	<>	<>	<>
+'71AA5F7	Fault_Currents	_Fault Currents	R11607	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'71AA616	Load_Currents	_Currents	R126	A1.2	B6.2	C8.4	<>	<>	<>	<>	<>	<>	<>
+'71AA630	Fault_Currents	_Fault Currents	R126	<>	<>	<>	8	6	Wipeout ON	<>	<>	<>	<>
+'71AA645	Load_Currents	_Currents	R272	A1.5	B2.5	C24.0	<>	<>	<>	<>	<>	<>	<>
+'71AA65F	Fault_Currents	_Fault Currents	R272	<>	<>	<>	24	2	Wipeout ON	<>	<>	<>	<>
+'71AA68E	Load_Currents	_Currents	R116	A-0.1	B5.0		<>	<>	<>	<>	<>	<>	<>
+'71AA6A8	Fault_Currents	_Fault Currents	R116	<>	<>	<>	15	5	Wipeout ON	<>	<>	<>	<>
+'71AA6C7	Load_Currents	_Currents	R117	A1.9	B5.8		<>	<>	<>	<>	<>	<>	<>
+'71AA6E1	Fault_Currents	_Fault Currents	R117	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'71B1638	Load_Currents	_Currents	R164	A0.3	B0.3	C3.3	<>	<>	<>	<>	<>	<>	<>
+'71B1652	Fault_Currents	_Fault Currents	R164	<>	<>	<>	3	0	Wipeout ON	<>	<>	<>	<>
+'71B1667	Load_Currents	_Currents	R288	A0.4	B0.3	C54.6	<>	<>	<>	<>	<>	<>	<>
+'71B1681	Fault_Currents	_Fault Currents	R288	<>	<>	<>	54	0	Wipeout ON	<>	<>	<>	<>
+'71B16B4	Load_Currents	_Currents	R7574	A3.0	B13.3		<>	<>	<>	<>	<>	<>	<>
+'71B16CE	Fault_Currents	_Fault Currents	R7574	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'71B16E3	Load_Currents	_Currents	R7575	A8.7	B13.3	C4.3	<>	<>	<>	<>	<>	<>	<>
+'71B16FD	Fault_Currents	_Fault Currents	R7575	<>	<>	<>	4	13	Wipeout ON	<>	<>	<>	<>
+'71B1726	Load_Currents	_Currents	R4308	A8.9	B11.3	C17.5	<>	<>	<>	<>	<>	<>	<>
+'71B1740	Fault_Currents	_Fault Currents	R4308	<>	<>	<>	17	11	Wipeout ON	<>	<>	<>	<>
+'71B175F	Load_Currents	_Currents	R7573	A6.7	B9.0	C4.3	<>	<>	<>	<>	<>	<>	<>
+'71B1779	Fault_Currents	_Fault Currents	R7573	<>	<>	<>	4	9	Wipeout ON	<>	<>	<>	<>
+'71B1798	Load_Currents	_Currents	R4307	A6.7	B9.0	C20.4	<>	<>	<>	<>	<>	<>	<>
+'71B17B2	Fault_Currents	_Fault Currents	R4307	<>	<>	<>	20	9	Wipeout ON	<>	<>	<>	<>
+'71B17D1	Load_Currents	_Currents	R289	A6.1	B7.2	C19.6	<>	<>	<>	<>	<>	<>	<>
+'71B17EB	Fault_Currents	_Fault Currents	R289	<>	<>	<>	19	7	Wipeout ON	<>	<>	<>	<>
+'71B180A	Load_Currents	_Currents	R5517	A9.5	B15.1		<>	<>	<>	<>	<>	<>	<>
+'71B1824	Fault_Currents	_Fault Currents	R5517	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71B1843	Load_Currents	_Currents	R255	A9.9	B13.1	C7.1	<>	<>	<>	<>	<>	<>	<>
+'71B185D	Fault_Currents	_Fault Currents	R255	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'71B187C	Load_Currents	_Currents	R256	A7.7	B11.6		<>	<>	<>	<>	<>	<>	<>
+'71B1896	Fault_Currents	_Fault Currents	R256	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71B18B4	Load_Currents	_Currents	R5514	A8.5	B10.4	C8.0	<>	<>	<>	<>	<>	<>	<>
+'71B18CE	Fault_Currents	_Fault Currents	R5514	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'71BB39B	Load_Currents	_Currents	R9583	A13.0	B10.4	C3.6	<>	<>	<>	<>	<>	<>	<>
+'71BB3B5	Fault_Currents	_Fault Currents	R9583	<>	<>	<>	3	10	Wipeout ON	<>	<>	<>	<>
+'71BB3D4	Load_Currents	_Currents	R5512	A13.1	B8.1		<>	<>	<>	<>	<>	<>	<>
+'71BB3EE	Fault_Currents	_Fault Currents	R5512	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'71BB41E	Voltage_Box	_Voltages	PC172114	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	406.0	119.3
+'71BB446	Voltage_Box	_Voltages	RG10354	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	414.0	113.3
+'71BB46F	Load_Currents	_Currents	R18040	A8.5	B9.2	C19.5	<>	<>	<>	<>	<>	<>	<>
+'71BB489	Fault_Currents	_Fault Currents	R18040	<>	<>	<>	19	9	Wipeout ON	<>	<>	<>	<>
+'71BB4A8	Load_Currents	_Currents	R5107	A9.7	B11.0	C7.1	<>	<>	<>	<>	<>	<>	<>
+'71BB4C2	Fault_Currents	_Fault Currents	R5107	<>	<>	<>	7	11	Wipeout ON	<>	<>	<>	<>
+'71BB4E1	Load_Currents	_Currents	R9176	A11.6	B12.7		<>	<>	<>	<>	<>	<>	<>
+'71BB4FB	Fault_Currents	_Fault Currents	R9176	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'71BB51A	Load_Currents	_Currents	R227	A11.5	B12.7	C22.3	<>	<>	<>	<>	<>	<>	<>
+'71BB534	Fault_Currents	_Fault Currents	R227	<>	<>	<>	21	12	Wipeout ON	<>	<>	<>	<>
+'71BB553	Load_Currents	_Currents	R18451	A2.5	B11.6		<>	<>	<>	<>	<>	<>	<>
+'71BB56D	Fault_Currents	_Fault Currents	R18451	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71BB58C	Load_Currents	_Currents	R9177	A9.2	B9.8	C6.8	<>	<>	<>	<>	<>	<>	<>
+'71BB5A6	Fault_Currents	_Fault Currents	R9177	<>	<>	<>	6	9	Wipeout ON	<>	<>	<>	<>
+'71BB5C5	Load_Currents	_Currents	R5510	A9.2	B9.8		<>	<>	<>	<>	<>	<>	<>
+'71BB5DF	Fault_Currents	_Fault Currents	R5510	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71BB5F4	Load_Currents	_Currents	R216	A3.9	B10.8		<>	<>	<>	<>	<>	<>	<>
+'71BB60E	Fault_Currents	_Fault Currents	R216	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'71BB623	Load_Currents	_Currents	R217	A9.2	B10.9	C12.4	<>	<>	<>	<>	<>	<>	<>
+'71BB63D	Fault_Currents	_Fault Currents	R217	<>	<>	<>	12	10	Wipeout ON	<>	<>	<>	<>
+'71C5110	Load_Currents	_Currents	R5109	A2.0	B4.8		<>	<>	<>	<>	<>	<>	<>
+'71C512A	Fault_Currents	_Fault Currents	R5109	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'71C5149	Load_Currents	_Currents	R8775	A5.2	B4.7	C15.9	<>	<>	<>	<>	<>	<>	<>
+'71C5163	Fault_Currents	_Fault Currents	R8775	<>	<>	<>	15	4	Wipeout ON	<>	<>	<>	<>
+'71C5178	Voltage_Box	_Voltages	PC133090	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	974.0	121.1
+'71C51AB	Voltage_Box	_Voltages	RG04298	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	561.0	120.2
+'71C51D4	Load_Currents	_Currents	R8375	A3.3	B2.6	C61.1	<>	<>	<>	<>	<>	<>	<>
+'71C51EE	Fault_Currents	_Fault Currents	R8375	<>	<>	<>	60	2	Wipeout ON	<>	<>	<>	<>
+'71C520D	Load_Currents	_Currents	R6360	A1.0	B1.4		<>	<>	<>	<>	<>	<>	<>
+'71C5227	Fault_Currents	_Fault Currents	R6360	<>	<>	<>	0	1	Wipeout ON	<>	<>	<>	<>
+'71C5246	Load_Currents	_Currents	R7977	A3.0	B3.5		<>	<>	<>	<>	<>	<>	<>
+'71C5260	Fault_Currents	_Fault Currents	R7977	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'71C5289	Load_Currents	_Currents	R215	A3.7	B3.2	C21.6	<>	<>	<>	<>	<>	<>	<>
+'71C52A3	Fault_Currents	_Fault Currents	R215	<>	<>	<>	21	3	Wipeout ON	<>	<>	<>	<>
+'71C52C1	Load_Currents	_Currents	R5108	A3.0	B2.4	C28.0	<>	<>	<>	<>	<>	<>	<>
+'71C52DB	Fault_Currents	_Fault Currents	R5108	<>	<>	<>	27	2	Wipeout ON	<>	<>	<>	<>
+'71C5300	Load_Currents	_Currents	R7974	A14.0	B7.4		<>	<>	<>	<>	<>	<>	<>
+'71C531A	Fault_Currents	_Fault Currents	R7974	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'71C5339	Load_Currents	_Currents	R4707	A3.2	B6.1		<>	<>	<>	<>	<>	<>	<>
+'71C5353	Fault_Currents	_Fault Currents	R4707	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'71C5372	Voltage_Box	_Voltages	PC133117	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	458.0	112.4
+'71C5391	Load_Currents	_Currents	R6362	A8.6	B4.8	C19.7	<>	<>	<>	<>	<>	<>	<>
+'71C53AB	Fault_Currents	_Fault Currents	R6362	<>	<>	<>	11	4	Wipeout ON	<>	<>	<>	<>
+'71C53D4	Load_Currents	_Currents	R280	A5.5	B3.1	C7.4	<>	<>	<>	<>	<>	<>	<>
+'71C53EE	Fault_Currents	_Fault Currents	R280	<>	<>	<>	7	3	Wipeout ON	<>	<>	<>	<>
+'71C540D	Load_Currents	_Currents	R247	A2.6	B2.1	C12.1	<>	<>	<>	<>	<>	<>	<>
+'71C5427	Fault_Currents	_Fault Currents	R247	<>	<>	<>	12	2	Wipeout ON	<>	<>	<>	<>
+'71C5446	Load_Currents	_Currents	R6355	A1.9	B2.3	C32.1	<>	<>	<>	<>	<>	<>	<>
+'71C5460	Fault_Currents	_Fault Currents	R6355	<>	<>	<>	31	2	Wipeout ON	<>	<>	<>	<>
+'71C547F	Load_Currents	_Currents	R236	A2.1	B3.8		<>	<>	<>	<>	<>	<>	<>
+'71C5499	Fault_Currents	_Fault Currents	R236	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'71C54B8	Load_Currents	_Currents	R237	A1.5	B5.2	C2.9	<>	<>	<>	<>	<>	<>	<>
+'71C54D2	Fault_Currents	_Fault Currents	R237	<>	<>	<>	2	5	Wipeout ON	<>	<>	<>	<>
+'71C54F1	Load_Currents	_Currents	R6358	A2.2	B5.3	C9.2	<>	<>	<>	<>	<>	<>	<>
+'71C550B	Fault_Currents	_Fault Currents	R6358	<>	<>	<>	9	5	Wipeout ON	<>	<>	<>	<>
+'71C5530	Load_Currents	_Currents	R6354	A9.3	B6.9		<>	<>	<>	<>	<>	<>	<>
+'71C554A	Fault_Currents	_Fault Currents	R6354	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'71C5569	Load_Currents	_Currents	R6361	A6.0	B8.1	C13.2	<>	<>	<>	<>	<>	<>	<>
+'71C5583	Fault_Currents	_Fault Currents	R6361	<>	<>	<>	12	8	Wipeout ON	<>	<>	<>	<>
+'71C55A2	Load_Currents	_Currents	R5519	A13.0	B9.6		<>	<>	<>	<>	<>	<>	<>
+'71C55BC	Fault_Currents	_Fault Currents	R5519	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71C55DB	Load_Currents	_Currents	R5520	A13.1	B9.7		<>	<>	<>	<>	<>	<>	<>
+'71C55F5	Fault_Currents	_Fault Currents	R5520	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71C563D	Load_Currents	_Currents	R6357	A7.2	B7.4	C9.4	<>	<>	<>	<>	<>	<>	<>
+'71C5657	Fault_Currents	_Fault Currents	R6357	<>	<>	<>	9	7	Wipeout ON	<>	<>	<>	<>
+'71C5676	Load_Currents	_Currents	R8780	A2.3	B7.1		<>	<>	<>	<>	<>	<>	<>
+'71C5690	Fault_Currents	_Fault Currents	R8780	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'71C56AF	Load_Currents	_Currents	R6356	A7.1	B7.4	C25.7	<>	<>	<>	<>	<>	<>	<>
+'71C56C9	Fault_Currents	_Fault Currents	R6356	<>	<>	<>	25	7	Wipeout ON	<>	<>	<>	<>
+'71C56F2	Load_Currents	_Currents	R9576	A3.7	B11.5		<>	<>	<>	<>	<>	<>	<>
+'71C570C	Fault_Currents	_Fault Currents	R9576	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71C572B	Load_Currents	_Currents	R290	A0.2	B1.0		<>	<>	<>	<>	<>	<>	<>
+'71C5745	Fault_Currents	_Fault Currents	R290	<>	<>	<>	0	1	Wipeout ON	<>	<>	<>	<>
+'71C5764	Load_Currents	_Currents	R291	A0.5	B2.0		<>	<>	<>	<>	<>	<>	<>
+'71C577E	Fault_Currents	_Fault Currents	R291	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'71C579D	Load_Currents	_Currents	R5927	A2.5	B3.7		<>	<>	<>	<>	<>	<>	<>
+'71C57B7	Fault_Currents	_Fault Currents	R5927	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'71C57D6	Load_Currents	_Currents	R5928	A3.8	B4.9		<>	<>	<>	<>	<>	<>	<>
+'71C57F0	Fault_Currents	_Fault Currents	R5928	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'71C580F	Load_Currents	_Currents	R9579	A0.3	B1.3		<>	<>	<>	<>	<>	<>	<>
+'71C5829	Fault_Currents	_Fault Currents	R9579	<>	<>	<>	0	1	Wipeout ON	<>	<>	<>	<>
+'71C5852	Load_Currents	_Currents	R267	A0.5	B1.7		<>	<>	<>	<>	<>	<>	<>
+'71C586C	Fault_Currents	_Fault Currents	R267	<>	<>	<>	0	1	Wipeout ON	<>	<>	<>	<>
+'71C588B	Load_Currents	_Currents	R292	A0.4	B1.4		<>	<>	<>	<>	<>	<>	<>
+'71C58A5	Fault_Currents	_Fault Currents	R292	<>	<>	<>	0	1	Wipeout ON	<>	<>	<>	<>
+'71D6279	Load_Currents	_Currents	R108	A8.6	B12.3	C7.8	<>	<>	<>	<>	<>	<>	<>
+'71D6293	Fault_Currents	_Fault Currents	R108	<>	<>	<>	7	12	Wipeout ON	<>	<>	<>	<>
+'71D62B3	Load_Currents	_Currents	R7569	A3.8	B12.3		<>	<>	<>	<>	<>	<>	<>
+'71D62CD	Fault_Currents	_Fault Currents	R7569	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'71D62FB	Load_Currents	_Currents	R6334	A4.9	B6.5	C9.9	<>	<>	<>	<>	<>	<>	<>
+'71D6315	Voltage_Box	_Voltages	PC104078	<>	<>	<>	<>	<>	Wipeout On	  |	WILLIAMSTOWN	370.0	120.9
+'71D6334	Fault_Currents	_Fault Currents	R6334	<>	<>	<>	9	6	Wipeout ON	<>	<>	<>	<>
+'71D635D	Load_Currents	_Currents	R109	A10.4	B16.4		<>	<>	<>	<>	<>	<>	<>
+'71D6377	Fault_Currents	_Fault Currents	R109	<>	<>	<>	0	16	Wipeout ON	<>	<>	<>	<>
+'71D638C	Voltage_Box	_Voltages	PC33034	<>	<>	<>	<>	<>	Wipeout On	  |	ARBELA	150.0	119.3
+'71D63AB	Fault_Currents	_Fault Currents	PC33034	<>	<>	<>	0	19	Wipeout ON	<>	<>	<>	<>
+'71D63C0	Voltage_Box	_Voltages	PC21452	<>	<>	<>	<>	<>	Wipeout On	  |	ARBELA	211.0	123.7
+'71D63DF	Fault_Currents	_Fault Currents	PC21452	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71D63F4	Voltage_Box	_Voltages	PC33658	<>	<>	<>	<>	<>	Wipeout On	  |	ARBELA	251.0	123.6
+'71D6413	Fault_Currents	_Fault Currents	PC33658	<>	<>	<>	-0	15	Wipeout ON	<>	<>	<>	<>
+'71D6428	Voltage_Box	_Voltages	PC31829	<>	<>	<>	<>	<>	Wipeout On	  |	ARBELA	258.0	123.8
+'71D6447	Fault_Currents	_Fault Currents	PC31829	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'71D645C	Voltage_Box	_Voltages	PC31222	<>	<>	<>	<>	<>	Wipeout On	  |	WILLIAMSTOWN	229.0	123.9
+'71D647B	Fault_Currents	_Fault Currents	PC31222	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71D6490	Voltage_Box	_Voltages	PC95971	<>	<>	<>	<>	<>	Wipeout On	  |	WILLIAMSTOWN	213.0	124.8
+'71D64AF	Fault_Currents	_Fault Currents	PC95971	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'71D64C4	Voltage_Box	_Voltages	PC49845	<>	<>	<>	<>	<>	Wipeout On	  |	WILLIAMSTOWN	341.0	125.0
+'71D64E3	Fault_Currents	_Fault Currents	PC49845	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'71D64F8	Voltage_Box	_Voltages	PC53119	<>	<>	<>	<>	<>	Wipeout On	  |	WILLIAMSTOWN	114.0	120.1
+'71D6517	Fault_Currents	_Fault Currents	PC53119	<>	<>	<>	0	19	Wipeout ON	<>	<>	<>	<>
+'71D652C	Voltage_Box	_Voltages	PC20916	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	119.0	121.5
+'71D654B	Fault_Currents	_Fault Currents	PC20916	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'71D6560	Voltage_Box	_Voltages	PC22789	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	104.0	121.8
+'71D657F	Fault_Currents	_Fault Currents	PC22789	<>	<>	<>	0	22	Wipeout ON	<>	<>	<>	<>
+'71D6594	Voltage_Box	_Voltages	PC31936	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	114.0	121.5
+'71D65B3	Fault_Currents	_Fault Currents	PC31936	<>	<>	<>	0	20	Wipeout ON	<>	<>	<>	<>
+'71D65C8	Voltage_Box	_Voltages	PC969	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	147.0	113.9
+'71D65E7	Fault_Currents	_Fault Currents	PC969	<>	<>	<>	0	20	Wipeout ON	<>	<>	<>	<>
+'71D65FC	Voltage_Box	_Voltages	PC20356	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	222.0	125.0
+'71D661B	Fault_Currents	_Fault Currents	PC20356	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71D6630	Voltage_Box	_Voltages	PC20294	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	179.0	117.4
+'71D664F	Fault_Currents	_Fault Currents	PC20294	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'71D6664	Voltage_Box	_Voltages	PC34268	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	163.0	120.7
+'71D6683	Fault_Currents	_Fault Currents	PC34268	<>	<>	<>	0	16	Wipeout ON	<>	<>	<>	<>
+'71D6698	Voltage_Box	_Voltages	PC35319	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	354.0	121.5
+'71D66B7	Fault_Currents	_Fault Currents	PC35319	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'71D66CC	Voltage_Box	_Voltages	PC154257	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	219.0	118.1
+'71D66EB	Fault_Currents	_Fault Currents	PC154257	<>	<>	<>	-0	12	Wipeout ON	<>	<>	<>	<>
+'71D6700	Voltage_Box	_Voltages	PC30345	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	142.0	122.3
+'71D671F	Fault_Currents	_Fault Currents	PC30345	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'71D6734	Voltage_Box	_Voltages	PC529	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	182.0	121.8
+'71D6753	Fault_Currents	_Fault Currents	PC529	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'71D6768	Voltage_Box	_Voltages	PC32865	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	191.0	123.5
+'71D6787	Fault_Currents	_Fault Currents	PC32865	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71D67A8	Voltage_Box	_Voltages	PC135167	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	140.0	76.2
+'71D67C7	Fault_Currents	_Fault Currents	PC135167	<>	<>	<>	0	21	Wipeout ON	<>	<>	<>	<>
+'71D67DC	Voltage_Box	_Voltages	PC16172	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	135.0	110.9
+'71D67FB	Fault_Currents	_Fault Currents	PC16172	<>	<>	<>	0	24	Wipeout ON	<>	<>	<>	<>
+'71D6810	Voltage_Box	_Voltages	PC75884	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	151.0	78.9
+'71D682F	Fault_Currents	_Fault Currents	PC75884	<>	<>	<>	-0	19	Wipeout ON	<>	<>	<>	<>
+'71D6844	Voltage_Box	_Voltages	PC15142	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	187.0	117.1
+'71D6863	Fault_Currents	_Fault Currents	PC15142	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71D6878	Voltage_Box	_Voltages	PC104097	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	95.0	120.1
+'71D6897	Fault_Currents	_Fault Currents	PC104097	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'71D68AC	Voltage_Box	_Voltages	PC7037	<>	<>	<>	<>	<>	Wipeout On	  |	BARING	175.0	119.4
+'71D68CB	Fault_Currents	_Fault Currents	PC7037	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'71D6920	Voltage_Box	_Voltages	PC4493	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	262.0	124.2
+'71D693F	Fault_Currents	_Fault Currents	PC4493	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71D6954	Voltage_Box	_Voltages	PC51801	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	321.0	124.4
+'71D6973	Fault_Currents	_Fault Currents	PC51801	<>	<>	<>	-0	8	Wipeout ON	<>	<>	<>	<>
+'71D69A6	Voltage_Box	_Voltages	PC116900	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	370.0	125.0
+'71D69CB	Fault_Currents	_Fault Currents	PC116900	<>	<>	<>	-0	13	Wipeout ON	<>	<>	<>	<>
+'71D69E4	Voltage_Box	_Voltages	PC66384	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	243.0	119.4
+'71D6A09	Fault_Currents	_Fault Currents	PC66384	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'71D6A22	Voltage_Box	_Voltages	PC55263	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	687.0	123.0
+'71D6A60	Voltage_Box	_Voltages	PC46186	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	291.0	122.1
+'71D6A85	Fault_Currents	_Fault Currents	PC46186	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'71D6A9E	Voltage_Box	_Voltages	PC4637	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	364.0	122.5
+'71D6AC3	Fault_Currents	_Fault Currents	PC4637	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'71D6ADC	Voltage_Box	_Voltages	PC4916	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	435.0	124.6
+'71D6B01	Fault_Currents	_Fault Currents	PC4916	<>	<>	<>	-0	10	Wipeout ON	<>	<>	<>	<>
+'71D6B1A	Voltage_Box	_Voltages	PC47788	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	374.0	123.8
+'71D6B3F	Fault_Currents	_Fault Currents	PC47788	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'71D6B58	Voltage_Box	_Voltages	PC90033	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	302.0	122.1
+'71D6B7D	Fault_Currents	_Fault Currents	PC90033	<>	<>	<>	-0	8	Wipeout ON	<>	<>	<>	<>
+'71D6B96	Voltage_Box	_Voltages	PC48139	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	228.0	119.8
+'71D6BBB	Fault_Currents	_Fault Currents	PC48139	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'71D6BD4	Voltage_Box	_Voltages	PC17425	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	328.0	125.6
+'71D6BF9	Fault_Currents	_Fault Currents	PC17425	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71D6C12	Voltage_Box	_Voltages	PC17520	<>	<>	<>	<>	<>	Wipeout On	  |	CANTON	277.0	123.9
+'71D6C37	Fault_Currents	_Fault Currents	PC17520	<>	<>	<>	1	10	Wipeout ON	<>	<>	<>	<>
+'71D6CBB	Load_Currents	_Currents	R12826	A15.8	B19.8	C1.1	<>	<>	<>	<>	<>	<>	<>
+'71D6CD5	Fault_Currents	_Fault Currents	R12826	<>	<>	<>	1	19	Wipeout ON	<>	<>	<>	<>
+'71D6CF4	Load_Currents	_Currents	R12825	A15.8	B19.1	C3.6	<>	<>	<>	<>	<>	<>	<>
+'71D6D0E	Fault_Currents	_Fault Currents	R12825	<>	<>	<>	3	19	Wipeout ON	<>	<>	<>	<>
+'71D6D2D	Load_Currents	_Currents	R87	A11.4	B18.3		<>	<>	<>	<>	<>	<>	<>
+'71D6D47	Fault_Currents	_Fault Currents	R87	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'71D6D70	Load_Currents	_Currents	R85	A13.9	B13.8	C7.1	<>	<>	<>	<>	<>	<>	<>
+'71D6D8A	Fault_Currents	_Fault Currents	R85	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'71D6DA9	Load_Currents	_Currents	R12823	A14.6	B15.9	C0.8	<>	<>	<>	<>	<>	<>	<>
+'71D6DC3	Fault_Currents	_Fault Currents	R12823	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'71E1172	Load_Currents	_Currents	R84	A11.2	B10.6	C6.3	<>	<>	<>	<>	<>	<>	<>
+'71E118C	Fault_Currents	_Fault Currents	R84	<>	<>	<>	6	10	Wipeout ON	<>	<>	<>	<>
+'71E11AB	Voltage_Box	_Voltages	PC131073	<>	<>	<>	<>	<>	Wipeout On	  |	LEWISTOWN	395.0	116.2
+'71E11D4	Load_Currents	_Currents	R12424	A9.7	B9.3	C27.2	<>	<>	<>	<>	<>	<>	<>
+'71E11EE	Fault_Currents	_Fault Currents	R12424	<>	<>	<>	18	9	Wipeout ON	<>	<>	<>	<>
+'71E120C	Load_Currents	_Currents	R12425	A2.0	B8.6		<>	<>	<>	<>	<>	<>	<>
+'71E1226	Fault_Currents	_Fault Currents	R12425	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'71E1245	Load_Currents	_Currents	R12426	A5.4	B8.5	C6.2	<>	<>	<>	<>	<>	<>	<>
+'71E125F	Fault_Currents	_Fault Currents	R12426	<>	<>	<>	6	8	Wipeout ON	<>	<>	<>	<>
+'71E127E	Load_Currents	_Currents	R82	A5.7	B10.3	C2.4	<>	<>	<>	<>	<>	<>	<>
+'71E1298	Fault_Currents	_Fault Currents	R82	<>	<>	<>	2	10	Wipeout ON	<>	<>	<>	<>
+'71E12B7	Load_Currents	_Currents	R13224	A6.7	B10.9	C12.5	<>	<>	<>	<>	<>	<>	<>
+'71E12D1	Fault_Currents	_Fault Currents	R13224	<>	<>	<>	12	10	Wipeout ON	<>	<>	<>	<>
+'71E12F0	Load_Currents	_Currents	R13223	A3.2	B9.9		<>	<>	<>	<>	<>	<>	<>
+'71E130A	Fault_Currents	_Fault Currents	R13223	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71E1329	Load_Currents	_Currents	R98	A5.1	B8.8	C15.9	<>	<>	<>	<>	<>	<>	<>
+'71E1343	Fault_Currents	_Fault Currents	R98	<>	<>	<>	15	8	Wipeout ON	<>	<>	<>	<>
+'71E1362	Load_Currents	_Currents	R97	A3.0	B7.4		<>	<>	<>	<>	<>	<>	<>
+'71E137C	Fault_Currents	_Fault Currents	R97	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'71E139B	Load_Currents	_Currents	R80	A3.0	B3.9	C13.4	<>	<>	<>	<>	<>	<>	<>
+'71E13B5	Fault_Currents	_Fault Currents	R80	<>	<>	<>	13	3	Wipeout ON	<>	<>	<>	<>
+'71E13D4	Load_Currents	_Currents	R90	A3.0	B3.9	C33.5	<>	<>	<>	<>	<>	<>	<>
+'71E13EE	Fault_Currents	_Fault Currents	R90	<>	<>	<>	25	3	Wipeout ON	<>	<>	<>	<>
+'71E140D	Load_Currents	_Currents	R79	A0.9	B2.4		<>	<>	<>	<>	<>	<>	<>
+'71E1427	Fault_Currents	_Fault Currents	R79	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'71E1446	Load_Currents	_Currents	R269	A0.3	B1.7		<>	<>	<>	<>	<>	<>	<>
+'71E1460	Fault_Currents	_Fault Currents	R269	<>	<>	<>	0	1	Wipeout ON	<>	<>	<>	<>
+'71E147F	Load_Currents	_Currents	R12421	A0.7	B2.6		<>	<>	<>	<>	<>	<>	<>
+'71E1499	Fault_Currents	_Fault Currents	R12421	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'71E14B8	Load_Currents	_Currents	R74	A0.9	B3.5	C5.7	<>	<>	<>	<>	<>	<>	<>
+'71E14D2	Fault_Currents	_Fault Currents	R74	<>	<>	<>	5	3	Wipeout ON	<>	<>	<>	<>
+'71E14F1	Load_Currents	_Currents	R208	A1.0	B5.2		<>	<>	<>	<>	<>	<>	<>
+'71E150B	Fault_Currents	_Fault Currents	R208	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'71EFFF2	Load_Currents	_Currents	R15236	A1.3	B6.7	C2.4	<>	<>	<>	<>	<>	<>	<>
+'71F000C	Fault_Currents	_Fault Currents	R15236	<>	<>	<>	2	6	Wipeout ON	<>	<>	<>	<>
+'71F751C	Load_Currents	_Currents	R12422	A1.3	B6.2		<>	<>	<>	<>	<>	<>	<>
+'71F7536	Fault_Currents	_Fault Currents	R12422	<>	<>	<>	-0	6	Wipeout ON	<>	<>	<>	<>
+'71F7555	Voltage_Box	_Voltages	PC127391	<>	<>	<>	<>	<>	Wipeout On	  |	LEWISTOWN	827.0	124.8
+'71F757E	Load_Currents	_Currents	R18860	A1.5	B3.2		<>	<>	<>	<>	<>	<>	<>
+'71F7598	Fault_Currents	_Fault Currents	R18860	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'71F7611	Load_Currents	_Currents	R5929	A7.3	B13.6		<>	<>	<>	<>	<>	<>	<>
+'71F762B	Fault_Currents	_Fault Currents	R5929	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'71F764A	Load_Currents	_Currents	R57	A5.7	B10.0		<>	<>	<>	<>	<>	<>	<>
+'71F7664	Fault_Currents	_Fault Currents	R57	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'71F7683	Load_Currents	_Currents	R56	A4.3	B9.8	C8.1	<>	<>	<>	<>	<>	<>	<>
+'71F769D	Fault_Currents	_Fault Currents	R56	<>	<>	<>	8	9	Wipeout ON	<>	<>	<>	<>
+'71F76BC	Load_Currents	_Currents	R5518	A8.8	B9.2		<>	<>	<>	<>	<>	<>	<>
+'71F76D6	Fault_Currents	_Fault Currents	R5518	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'71F76F5	Load_Currents	_Currents	R7572	A0.9	B5.3		<>	<>	<>	<>	<>	<>	<>
+'71F770F	Fault_Currents	_Fault Currents	R7572	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'71F772E	Load_Currents	_Currents	R47	A4.4	B5.3	C8.1	<>	<>	<>	<>	<>	<>	<>
+'71F7748	Fault_Currents	_Fault Currents	R47	<>	<>	<>	8	5	Wipeout ON	<>	<>	<>	<>
+'71F7767	Load_Currents	_Currents	R7159	A0.9	B3.5		<>	<>	<>	<>	<>	<>	<>
+'71F7781	Fault_Currents	_Fault Currents	R7159	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'71F77A0	Load_Currents	_Currents	R262	A2.0	B2.3	C13.5	<>	<>	<>	<>	<>	<>	<>
+'71F77BA	Fault_Currents	_Fault Currents	R262	<>	<>	<>	13	2	Wipeout ON	<>	<>	<>	<>
+'71F77D9	Load_Currents	_Currents	R7169	A2.0	B2.2	C-0.1	<>	<>	<>	<>	<>	<>	<>
+'71F77F3	Fault_Currents	_Fault Currents	R7169	<>	<>	<>	-0	2	Wipeout ON	<>	<>	<>	<>
+'71F7812	Load_Currents	_Currents	R11605	A6.9	B13.6	C1.5	<>	<>	<>	<>	<>	<>	<>
+'71F782C	Fault_Currents	_Fault Currents	R11605	<>	<>	<>	1	13	Wipeout ON	<>	<>	<>	<>
+'71F784B	Load_Currents	_Currents	R52	A1.8	B6.3	C2.1	<>	<>	<>	<>	<>	<>	<>
+'71F7865	Fault_Currents	_Fault Currents	R52	<>	<>	<>	2	6	Wipeout ON	<>	<>	<>	<>
+'71F7884	Load_Currents	_Currents	R18457	A1.3	B5.6		<>	<>	<>	<>	<>	<>	<>
+'71F789E	Fault_Currents	_Fault Currents	R18457	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'71F78BD	Load_Currents	_Currents	R51	A1.2	B4.6	C2.3	<>	<>	<>	<>	<>	<>	<>
+'71F78D7	Fault_Currents	_Fault Currents	R51	<>	<>	<>	2	4	Wipeout ON	<>	<>	<>	<>
+'71F7900	Load_Currents	_Currents	R6759	A3.3	B4.9	C12.2	<>	<>	<>	<>	<>	<>	<>
+'71F791A	Fault_Currents	_Fault Currents	R6759	<>	<>	<>	12	4	Wipeout ON	<>	<>	<>	<>
+'7201C4D	Load_Currents	_Currents	R14833	A3.6	B9.4		<>	<>	<>	<>	<>	<>	<>
+'7201C67	Fault_Currents	_Fault Currents	R14833	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7201C90	Voltage_Box	_Voltages	RG44682	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	324.0	120.3
+'7201CB9	Load_Currents	_Currents	R14834	A14.7	B19.8		<>	<>	<>	<>	<>	<>	<>
+'7201CD3	Fault_Currents	_Fault Currents	R14834	<>	<>	<>	1	19	Wipeout ON	<>	<>	<>	<>
+'7201CF2	Load_Currents	_Currents	R42	A14.3	B15.1	C9.4	<>	<>	<>	<>	<>	<>	<>
+'7201D0C	Fault_Currents	_Fault Currents	R42	<>	<>	<>	13	15	Wipeout ON	<>	<>	<>	<>
+'7201D2B	Load_Currents	_Currents	R41	A14.3	B14.0		<>	<>	<>	<>	<>	<>	<>
+'7201D45	Fault_Currents	_Fault Currents	R41	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'7201D64	Voltage_Box	_Voltages	PC59678	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	527.0	119.1
+'7201D8D	Load_Currents	_Currents	R20864	A4.2	B8.7		<>	<>	<>	<>	<>	<>	<>
+'7201DA7	Fault_Currents	_Fault Currents	R20864	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7201DCC	Load_Currents	_Currents	R2702	A2.2	B7.2	C18.2	<>	<>	<>	<>	<>	<>	<>
+'7201DE6	Fault_Currents	_Fault Currents	R2702	<>	<>	<>	26	7	Wipeout ON	<>	<>	<>	<>
+'7201E0E	Voltage_Box	_Voltages	PC124274	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	1528.0	124.8
+'7201E37	Load_Currents	_Currents	R9580	A0.3	B0.8	C33.6	<>	<>	<>	<>	<>	<>	<>
+'7201E51	Fault_Currents	_Fault Currents	R9580	<>	<>	<>	33	0	Wipeout ON	<>	<>	<>	<>
+'7201E70	Load_Currents	_Currents	R20465	A0.4	B1.3	C7.1	<>	<>	<>	<>	<>	<>	<>
+'7201E8A	Fault_Currents	_Fault Currents	R20465	<>	<>	<>	7	1	Wipeout ON	<>	<>	<>	<>
+'7201EA9	Load_Currents	_Currents	R38	A0.7	B1.5	C6.7	<>	<>	<>	<>	<>	<>	<>
+'7201EC3	Fault_Currents	_Fault Currents	R38	<>	<>	<>	6	1	Wipeout ON	<>	<>	<>	<>
+'7201EE2	Load_Currents	_Currents	R33	A0.7	B1.4	C15.5	<>	<>	<>	<>	<>	<>	<>
+'7201EFC	Fault_Currents	_Fault Currents	R33	<>	<>	<>	15	1	Wipeout ON	<>	<>	<>	<>
+'7201F35	Fault_Currents	_Fault Currents	R53	<>	<>	<>	9	3	Wipeout ON	<>	<>	<>	<>
+'7201F54	Load_Currents	_Currents	R54	A4.1	B3.9	C11.5	<>	<>	<>	<>	<>	<>	<>
+'7201F6E	Fault_Currents	_Fault Currents	R54	<>	<>	<>	11	3	Wipeout ON	<>	<>	<>	<>
+'7201F8D	Voltage_Box	_Voltages	PC56067	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	657.0	121.3
+'7201FB6	Load_Currents	_Currents	R46	A4.4	B5.3	C13.0	<>	<>	<>	<>	<>	<>	<>
+'7201FD0	Fault_Currents	_Fault Currents	R46	<>	<>	<>	13	5	Wipeout ON	<>	<>	<>	<>
+'7201FEF	Load_Currents	_Currents	R6333	A6.0	B9.4	C4.5	<>	<>	<>	<>	<>	<>	<>
+'7202009	Fault_Currents	_Fault Currents	R6333	<>	<>	<>	4	9	Wipeout ON	<>	<>	<>	<>
+'7202028	Load_Currents	_Currents	R6335	A6.3	B10.0		<>	<>	<>	<>	<>	<>	<>
+'7202042	Fault_Currents	_Fault Currents	R6335	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7202061	Load_Currents	_Currents	R35	A5.9	B10.3	C8.5	<>	<>	<>	<>	<>	<>	<>
+'720207B	Fault_Currents	_Fault Currents	R35	<>	<>	<>	8	10	Wipeout ON	<>	<>	<>	<>
+'720209A	Load_Currents	_Currents	R14030	A4.7	B6.1		<>	<>	<>	<>	<>	<>	<>
+'72020B4	Fault_Currents	_Fault Currents	R14030	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'72020D2	Voltage_Box	_Voltages	PC57645	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	506.0	121.6
+'72020F1	Voltage_Box	_Voltages	PC57007	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	137.0	121.0
+'7202110	Fault_Currents	_Fault Currents	PC57007	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'7202125	Voltage_Box	_Voltages	PC56406	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	156.0	120.0
+'7202144	Fault_Currents	_Fault Currents	PC56406	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'7202159	Voltage_Box	_Voltages	PC58684	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	202.0	122.8
+'7202178	Fault_Currents	_Fault Currents	PC58684	<>	<>	<>	-0	13	Wipeout ON	<>	<>	<>	<>
+'720218D	Voltage_Box	_Voltages	PC9316	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	183.0	122.5
+'72021AC	Fault_Currents	_Fault Currents	PC9316	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'72021C1	Voltage_Box	_Voltages	PC48213	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	156.0	118.6
+'72021E0	Fault_Currents	_Fault Currents	PC48213	<>	<>	<>	-0	22	Wipeout ON	<>	<>	<>	<>
+'72021F5	Voltage_Box	_Voltages	PC62371	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	220.0	123.6
+'7202214	Fault_Currents	_Fault Currents	PC62371	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7202229	Voltage_Box	_Voltages	PC86736	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	323.0	124.7
+'7202248	Fault_Currents	_Fault Currents	PC86736	<>	<>	<>	-0	10	Wipeout ON	<>	<>	<>	<>
+'720225D	Voltage_Box	_Voltages	PC8766	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	157.0	121.3
+'720227C	Fault_Currents	_Fault Currents	PC8766	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'7202291	Voltage_Box	_Voltages	PC65435	<>	<>	<>	<>	<>	Wipeout On	  |	NOVELTY	141.0	124.7
+'72022B0	Fault_Currents	_Fault Currents	PC65435	<>	<>	<>	-0	17	Wipeout ON	<>	<>	<>	<>
+'72022EB	Voltage_Box	_Voltages	PC133611	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	2082.0	125.9
+'7202329	Load_Currents	_Currents	R28	A0.2	B6.8	C3.5	<>	<>	<>	<>	<>	<>	<>
+'7202343	Fault_Currents	_Fault Currents	R28	<>	<>	<>	3	6	Wipeout ON	<>	<>	<>	<>
+'7202362	Load_Currents	_Currents	R12423	A0.7	B3.8		<>	<>	<>	<>	<>	<>	<>
+'720237C	Fault_Currents	_Fault Currents	R12423	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'720239B	Load_Currents	_Currents	R11604	A0.2	B4.6	C4.4	<>	<>	<>	<>	<>	<>	<>
+'72023B5	Fault_Currents	_Fault Currents	R11604	<>	<>	<>	4	4	Wipeout ON	<>	<>	<>	<>
+'72023D4	Load_Currents	_Currents	R23	A0.6	B5.5		<>	<>	<>	<>	<>	<>	<>
+'72023EE	Fault_Currents	_Fault Currents	R23	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'720240D	Load_Currents	_Currents	R271	A0.6	B5.5		<>	<>	<>	<>	<>	<>	<>
+'7202427	Fault_Currents	_Fault Currents	R271	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'7202446	Load_Currents	_Currents	R14029	A1.0	B6.9		<>	<>	<>	<>	<>	<>	<>
+'7202460	Fault_Currents	_Fault Currents	R14029	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'720247F	Load_Currents	_Currents	R281	A1.5	B9.0		<>	<>	<>	<>	<>	<>	<>
+'7202499	Fault_Currents	_Fault Currents	R281	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'72024E7	Load_Currents	_Currents	R14028	A2.0	B9.1		<>	<>	<>	<>	<>	<>	<>
+'7202501	Fault_Currents	_Fault Currents	R14028	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7202520	Load_Currents	_Currents	R13632	A6.8	B11.5	C3.7	<>	<>	<>	<>	<>	<>	<>
+'720253A	Fault_Currents	_Fault Currents	R13632	<>	<>	<>	3	11	Wipeout ON	<>	<>	<>	<>
+'7202559	Load_Currents	_Currents	R18	A6.9	B11.8	C5.9	<>	<>	<>	<>	<>	<>	<>
+'7202573	Fault_Currents	_Fault Currents	R18	<>	<>	<>	5	11	Wipeout ON	<>	<>	<>	<>
+'7202592	Load_Currents	_Currents	R16	A3.4	B9.8		<>	<>	<>	<>	<>	<>	<>
+'72025AC	Fault_Currents	_Fault Currents	R16	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'72025CB	Load_Currents	_Currents	R13631	A3.4	B8.1		<>	<>	<>	<>	<>	<>	<>
+'72025E5	Fault_Currents	_Fault Currents	R13631	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'720C73B	Load_Currents	_Currents	R13630	A3.2	B6.0		<>	<>	<>	<>	<>	<>	<>
+'720C755	Fault_Currents	_Fault Currents	R13630	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'720C789	Load_Currents	_Currents	R14	A3.2	B4.9	C15.1	<>	<>	<>	<>	<>	<>	<>
+'720C7A3	Fault_Currents	_Fault Currents	R14	<>	<>	<>	15	4	Wipeout ON	<>	<>	<>	<>
+'720C7B8	Voltage_Box	_Voltages	PC85701	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	1128.0	123.0
+'720C7E1	Load_Currents	_Currents	R20	A3.0	B4.6	C18.7	<>	<>	<>	<>	<>	<>	<>
+'720C7FB	Fault_Currents	_Fault Currents	R20	<>	<>	<>	18	4	Wipeout ON	<>	<>	<>	<>
+'7213C1C	Load_Currents	_Currents	R12	A2.0	B2.9	C7.0	<>	<>	<>	<>	<>	<>	<>
+'7213C36	Fault_Currents	_Fault Currents	R12	<>	<>	<>	7	2	Wipeout ON	<>	<>	<>	<>
+'7213C67	Load_Currents	_Currents	R13629	A5.0	B12.5	C5.5	<>	<>	<>	<>	<>	<>	<>
+'7213C81	Fault_Currents	_Fault Currents	R13629	<>	<>	<>	5	12	Wipeout ON	<>	<>	<>	<>
+'7213CA0	Load_Currents	_Currents	R9582	A4.1	B9.7	C14.9	<>	<>	<>	<>	<>	<>	<>
+'7213CBA	Fault_Currents	_Fault Currents	R9582	<>	<>	<>	14	9	Wipeout ON	<>	<>	<>	<>
+'7213CCF	Load_Currents	_Currents	R21	A4.1	B9.7	C1.8	<>	<>	<>	<>	<>	<>	<>
+'7213CE9	Fault_Currents	_Fault Currents	R21	<>	<>	<>	1	9	Wipeout ON	<>	<>	<>	<>
+'7213D12	Load_Currents	_Currents	R13628	A4.0	B10.7		<>	<>	<>	<>	<>	<>	<>
+'7213D2C	Fault_Currents	_Fault Currents	R13628	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7213D7F	Voltage_Box	_Voltages	PC93847	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	251.0	124.4
+'7213D9E	Fault_Currents	_Fault Currents	PC93847	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7213DB3	Voltage_Box	_Voltages	PC87432	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	221.0	121.9
+'7213DD2	Fault_Currents	_Fault Currents	PC87432	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7213DE7	Voltage_Box	_Voltages	PC85995	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	279.0	124.9
+'7213E06	Fault_Currents	_Fault Currents	PC85995	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7213E1B	Voltage_Box	_Voltages	PC15864	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	227.0	123.4
+'7213E3A	Fault_Currents	_Fault Currents	PC15864	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7213E4F	Voltage_Box	_Voltages	PC81083	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	428.0	125.6
+'7213E6E	Fault_Currents	_Fault Currents	PC81083	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7213E83	Voltage_Box	_Voltages	PC79382	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	339.0	125.1
+'7213EA2	Fault_Currents	_Fault Currents	PC79382	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7213EB7	Voltage_Box	_Voltages	PC123564	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	862.0	125.9
+'7213ED6	Fault_Currents	_Fault Currents	PC123564	<>	<>	<>	-0	9	Wipeout ON	<>	<>	<>	<>
+'7213EEB	Voltage_Box	_Voltages	PC85636	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	407.0	121.9
+'7213F0A	Fault_Currents	_Fault Currents	PC85636	<>	<>	<>	-0	13	Wipeout ON	<>	<>	<>	<>
+'7213F1F	Voltage_Box	_Voltages	PC85636	<>	<>	<>	<>	<>	Wipeout On	  |	NEWARK	407.0	121.9
+'7213F3E	Fault_Currents	_Fault Currents	PC85636	<>	<>	<>	-0	13	Wipeout ON	<>	<>	<>	<>
+'721B313	Voltage_Box	_Voltages	PC123640	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	1303.0	124.6
+'721B356	Load_Currents	_Currents	R9984	A2.5	B4.9	C4.2	<>	<>	<>	<>	<>	<>	<>
+'721B375	Fault_Currents	_Fault Currents	R9984	<>	<>	<>	4	4	Wipeout ON	<>	<>	<>	<>
+'721B38E	Load_Currents	_Currents	R11614	A2.0	B3.7		<>	<>	<>	<>	<>	<>	<>
+'721B3AD	Fault_Currents	_Fault Currents	R11614	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'721B3DA	Load_Currents	_Currents	R9996	A2.0	B2.8	C22.2	<>	<>	<>	<>	<>	<>	<>
+'721B3F9	Fault_Currents	_Fault Currents	R9996	<>	<>	<>	22	2	Wipeout ON	<>	<>	<>	<>
+'721B426	Load_Currents	_Currents	R18458	A3.3	B3.9		<>	<>	<>	<>	<>	<>	<>
+'721B445	Fault_Currents	_Fault Currents	R18458	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'721B468	Load_Currents	_Currents	R10400	A4.7	B6.8	C16.8	<>	<>	<>	<>	<>	<>	<>
+'721B487	Fault_Currents	_Fault Currents	R10400	<>	<>	<>	16	6	Wipeout ON	<>	<>	<>	<>
+'721B4AA	Load_Currents	_Currents	R10402	A5.3	B5.6	C11.0	<>	<>	<>	<>	<>	<>	<>
+'721B4C9	Fault_Currents	_Fault Currents	R10402	<>	<>	<>	11	5	Wipeout ON	<>	<>	<>	<>
+'721B4EC	Load_Currents	_Currents	R10002	A3.3	B3.5	C41.4	<>	<>	<>	<>	<>	<>	<>
+'721B50B	Fault_Currents	_Fault Currents	R10002	<>	<>	<>	41	3	Wipeout ON	<>	<>	<>	<>
+'721B524	Load_Currents	_Currents	R18456	A3.3	B3.5		<>	<>	<>	<>	<>	<>	<>
+'721B543	Fault_Currents	_Fault Currents	R18456	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'721B570	Load_Currents	_Currents	R9983	A0.5	B1.1	C5.3	<>	<>	<>	<>	<>	<>	<>
+'721B58F	Fault_Currents	_Fault Currents	R9983	<>	<>	<>	5	1	Wipeout ON	<>	<>	<>	<>
+'721B5B2	Load_Currents	_Currents	R6352	A0.6	B1.9	C4.5	<>	<>	<>	<>	<>	<>	<>
+'721B5D1	Fault_Currents	_Fault Currents	R6352	<>	<>	<>	4	1	Wipeout ON	<>	<>	<>	<>
+'721B5F4	Load_Currents	_Currents	R18041	A6.8	B6.4		<>	<>	<>	<>	<>	<>	<>
+'721B613	Fault_Currents	_Fault Currents	R18041	<>	<>	<>	4	6	Wipeout ON	<>	<>	<>	<>
+'721B636	Load_Currents	_Currents	R9998	A3.2	B2.9	C24.0	<>	<>	<>	<>	<>	<>	<>
+'721B655	Fault_Currents	_Fault Currents	R9998	<>	<>	<>	31	2	Wipeout ON	<>	<>	<>	<>
+'721B678	Load_Currents	_Currents	R6353	A7.2	B5.2		<>	<>	<>	<>	<>	<>	<>
+'721B697	Fault_Currents	_Fault Currents	R6353	<>	<>	<>	3	5	Wipeout ON	<>	<>	<>	<>
+'722618B	Load_Currents	_Currents	R9999	A3.1	B3.3	C12.7	<>	<>	<>	<>	<>	<>	<>
+'72261AA	Fault_Currents	_Fault Currents	R9999	<>	<>	<>	12	3	Wipeout ON	<>	<>	<>	<>
+'72261CD	Voltage_Box	_Voltages	PC133108	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	826.0	122.7
+'72261FC	Load_Currents	_Currents	R18453	A12.2	B9.1		<>	<>	<>	<>	<>	<>	<>
+'722621B	Fault_Currents	_Fault Currents	R18453	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'722623E	Load_Currents	_Currents	R3	A2.6	B8.6	C7.9	<>	<>	<>	<>	<>	<>	<>
+'722625D	Fault_Currents	_Fault Currents	R3	<>	<>	<>	8	8	Wipeout ON	<>	<>	<>	<>
+'7226280	Load_Currents	_Currents	R18454	A3.1	B8.4	C8.6	<>	<>	<>	<>	<>	<>	<>
+'722629F	Fault_Currents	_Fault Currents	R18454	<>	<>	<>	8	8	Wipeout ON	<>	<>	<>	<>
+'72262C2	Voltage_Box	_Voltages	RG01811	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	502.0	115.5
+'72262F1	Load_Currents	_Currents	R10000	A3.3	B6.5		<>	<>	<>	<>	<>	<>	<>
+'7226310	Fault_Currents	_Fault Currents	R10000	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7226333	Load_Currents	_Currents	R10	A3.4	B6.5	C11.3	<>	<>	<>	<>	<>	<>	<>
+'7226352	Fault_Currents	_Fault Currents	R10	<>	<>	<>	11	6	Wipeout ON	<>	<>	<>	<>
+'722637F	Load_Currents	_Currents	R10	A3.4	B6.5	C11.3	<>	<>	<>	<>	<>	<>	<>
+'722639E	Fault_Currents	_Fault Currents	R10001	<>	<>	<>	10	9	Wipeout ON	<>	<>	<>	<>
+'72263EC	Fault_Currents	_Fault Currents	PC11617	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7226405	Voltage_Box	_Voltages	PC11617	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	520.0	123.7
+'722642A	Fault_Currents	_Fault Currents	PC16598	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7226443	Voltage_Box	_Voltages	PC16598	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	309.0	121.0
+'7226468	Fault_Currents	_Fault Currents	PC16712	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7226481	Voltage_Box	_Voltages	PC16712	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	340.0	121.4
+'72264A6	Fault_Currents	_Fault Currents	PC16832	<>	<>	<>	-0	8	Wipeout ON	<>	<>	<>	<>
+'72264BF	Voltage_Box	_Voltages	PC16832	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	341.0	123.8
+'72264E4	Fault_Currents	_Fault Currents	PC41688	<>	<>	<>	5	14	Wipeout ON	<>	<>	<>	<>
+'72264FD	Voltage_Box	_Voltages	PC147774	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	372.0	124.0
+'7226522	Fault_Currents	_Fault Currents	PC147783	<>	<>	<>	1	5	Wipeout ON	<>	<>	<>	<>
+'722653B	Voltage_Box	_Voltages	PC147783	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	398.0	124.7
+'7226560	Fault_Currents	_Fault Currents	PC40722	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7226579	Voltage_Box	_Voltages	PC40722	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	232.0	123.6
+'72265A6	Fault_Currents	_Fault Currents	PC40209	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'72265BF	Voltage_Box	_Voltages	PC40209	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	187.0	122.2
+'72265E4	Fault_Currents	_Fault Currents	PC39578	<>	<>	<>	-0	7	Wipeout ON	<>	<>	<>	<>
+'72265FD	Voltage_Box	_Voltages	PC39578	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	470.0	119.2
+'722E945	Voltage_Box	_Voltages	PC12395	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	278.0	122.5
+'722E964	Fault_Currents	_Fault Currents	PC12395	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'722E992	Load_Currents	_Currents	R12018	A4.1	B6.5		<>	<>	<>	<>	<>	<>	<>
+'722E9B1	Fault_Currents	_Fault Currents	R12018	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'722E9D4	Load_Currents	_Currents	R12017	A3.9	B6.0		<>	<>	<>	<>	<>	<>	<>
+'722E9F3	Fault_Currents	_Fault Currents	R12017	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'722EA16	Load_Currents	_Currents	R11617	A5.0	B5.2		<>	<>	<>	<>	<>	<>	<>
+'722EA35	Fault_Currents	_Fault Currents	R11617	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'722EA58	Load_Currents	_Currents	R11618	A4.4	B4.5	C45.4	<>	<>	<>	<>	<>	<>	<>
+'722EA77	Fault_Currents	_Fault Currents	R11618	<>	<>	<>	45	4	Wipeout ON	<>	<>	<>	<>
+'722EAA4	Load_Currents	_Currents	R12019	A6.7	B6.3	C29.0	<>	<>	<>	<>	<>	<>	<>
+'722EAC3	Fault_Currents	_Fault Currents	R12019	<>	<>	<>	29	6	Wipeout ON	<>	<>	<>	<>
+'722EAE6	Load_Currents	_Currents	R285	A2.9	B2.4		<>	<>	<>	<>	<>	<>	<>
+'722EB05	Fault_Currents	_Fault Currents	R285	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'722EB1E	Load_Currents	_Currents	R11616	A2.5	B2.4		<>	<>	<>	<>	<>	<>	<>
+'722EB3D	Fault_Currents	_Fault Currents	R11616	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'722EB6A	Load_Currents	_Currents	R270	A4.4	B5.9	C10.9	<>	<>	<>	<>	<>	<>	<>
+'722EB89	Fault_Currents	_Fault Currents	R270	<>	<>	<>	10	5	Wipeout ON	<>	<>	<>	<>
+'722EBAC	Load_Currents	_Currents	R198	A2.6	B5.6		<>	<>	<>	<>	<>	<>	<>
+'722EBCB	Fault_Currents	_Fault Currents	R198	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'722EBF8	Load_Currents	_Currents	R12020	A2.4	B5.2		<>	<>	<>	<>	<>	<>	<>
+'722EC17	Fault_Currents	_Fault Currents	R12020	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'722EC3A	Load_Currents	_Currents	R1902	A1.8	B2.5		<>	<>	<>	<>	<>	<>	<>
+'722EC59	Fault_Currents	_Fault Currents	R1902	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'722EC7C	Load_Currents	_Currents	R192	A3.7	B4.7		<>	<>	<>	<>	<>	<>	<>
+'722EC9B	Fault_Currents	_Fault Currents	R192	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'722ECBE	Load_Currents	_Currents	R2302	A2.3	B2.9	C7.8	<>	<>	<>	<>	<>	<>	<>
+'722ECDD	Fault_Currents	_Fault Currents	R2302	<>	<>	<>	7	2	Wipeout ON	<>	<>	<>	<>
+'722ED00	Load_Currents	_Currents	R11	A2.3	B2.7	C15.9	<>	<>	<>	<>	<>	<>	<>
+'722ED1F	Fault_Currents	_Fault Currents	R11	<>	<>	<>	15	2	Wipeout ON	<>	<>	<>	<>
+'7237841	Load_Currents	_Currents	R5926	A2.1	B2.3	C13.3	<>	<>	<>	<>	<>	<>	<>
+'7237860	Fault_Currents	_Fault Currents	R5926	<>	<>	<>	13	2	Wipeout ON	<>	<>	<>	<>
+'7237883	Load_Currents	_Currents	R196	A2.1	B2.1	C19.1	<>	<>	<>	<>	<>	<>	<>
+'72378A2	Fault_Currents	_Fault Currents	R196	<>	<>	<>	19	2	Wipeout ON	<>	<>	<>	<>
+'72378C5	Load_Currents	_Currents	R3102	A1.9	B2.0	C2.8	<>	<>	<>	<>	<>	<>	<>
+'72378E4	Fault_Currents	_Fault Currents	R3102	<>	<>	<>	2	2	Wipeout ON	<>	<>	<>	<>
+'7237907	Load_Currents	_Currents	R207	A4.5	B6.7		<>	<>	<>	<>	<>	<>	<>
+'7237926	Fault_Currents	_Fault Currents	R207	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'724CB22	Load_Currents	_Currents	R11612	A15.8	B13.7		<>	<>	<>	<>	<>	<>	<>
+'724CB41	Fault_Currents	_Fault Currents	R11612	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'724CB64	Load_Currents	_Currents	R10804	A14.5	B9.9	C1.5	<>	<>	<>	<>	<>	<>	<>
+'724CB83	Fault_Currents	_Fault Currents	R10804	<>	<>	<>	1	9	Wipeout ON	<>	<>	<>	<>
+'724CBA6	Load_Currents	_Currents	R277	A14.5	B9.7	C5.0	<>	<>	<>	<>	<>	<>	<>
+'724CBC5	Fault_Currents	_Fault Currents	R277	<>	<>	<>	18	9	Wipeout ON	<>	<>	<>	<>
+'724CBE8	Load_Currents	_Currents	R11610	A14.5	B9.3	C8.7	<>	<>	<>	<>	<>	<>	<>
+'724CC07	Fault_Currents	_Fault Currents	R11610	<>	<>	<>	8	9	Wipeout ON	<>	<>	<>	<>
+'724CC34	Load_Currents	_Currents	R266	A14.9	B6.0		<>	<>	<>	<>	<>	<>	<>
+'724CC53	Fault_Currents	_Fault Currents	R266	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'724CC75	Voltage_Box	_Voltages	PC124709	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	1272.0	116.2
+'724CCAA	Load_Currents	_Currents	R3502	A9.9	B3.7		<>	<>	<>	<>	<>	<>	<>
+'724CCC9	Fault_Currents	_Fault Currents	R3502	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'724CCF6	Load_Currents	_Currents	R11613	A13.3	B6.6	C28.4	<>	<>	<>	<>	<>	<>	<>
+'724CD15	Fault_Currents	_Fault Currents	R11613	<>	<>	<>	42	6	Wipeout ON	<>	<>	<>	<>
+'724CD38	Load_Currents	_Currents	R122	A13.3	B6.6	C31.9	<>	<>	<>	<>	<>	<>	<>
+'724CD57	Fault_Currents	_Fault Currents	R122	<>	<>	<>	32	6	Wipeout ON	<>	<>	<>	<>
+'724CD70	Voltage_Box	_Voltages	PC54123	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	418.0	123.9
+'724CD95	Fault_Currents	_Fault Currents	PC54123	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'724CDAE	Voltage_Box	_Voltages	PC14694	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	195.0	114.0
+'724CDD3	Fault_Currents	_Fault Currents	PC14694	<>	<>	<>	-0	18	Wipeout ON	<>	<>	<>	<>
+'724CDEC	Voltage_Box	_Voltages	PC123829	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	465.0	118.7
+'724CE11	Fault_Currents	_Fault Currents	PC123829	<>	<>	<>	-0	12	Wipeout ON	<>	<>	<>	<>
+'724CE2A	Voltage_Box	_Voltages	PC55536	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	223.0	115.6
+'724CE4F	Fault_Currents	_Fault Currents	PC55536	<>	<>	<>	0	16	Wipeout ON	<>	<>	<>	<>
+'724CE68	Voltage_Box	_Voltages	PC82606	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	334.0	125.5
+'724CE8D	Fault_Currents	_Fault Currents	PC82606	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'724CEA6	Voltage_Box	_Voltages	PC55043	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	469.0	120.5
+'724CECB	Fault_Currents	_Fault Currents	PC55043	<>	<>	<>	5	9	Wipeout ON	<>	<>	<>	<>
+'724CEE4	Voltage_Box	_Voltages	PC88796	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	286.0	123.9
+'724CF09	Fault_Currents	_Fault Currents	PC88796	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'724CF60	Voltage_Box	_Voltages	PC82590	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	654.0	121.6
+'724CF85	Fault_Currents	_Fault Currents	PC82590	<>	<>	<>	-0	7	Wipeout ON	<>	<>	<>	<>
+'724DB65	Voltage_Box	_Voltages	PC72335	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	266.0	119.7
+'724DB90	Fault_Currents	_Fault Currents	PC72335	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'724DBAD	Voltage_Box	_Voltages	PC157164	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	319.0	119.5
+'724DBD8	Fault_Currents	_Fault Currents	PC157164	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'724DBF5	Voltage_Box	_Voltages	PC67157	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	212.0	116.4
+'724DC20	Fault_Currents	_Fault Currents	PC67157	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'724DC3D	Voltage_Box	_Voltages	PC76970	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	291.0	121.7
+'724DC68	Fault_Currents	_Fault Currents	PC76970	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'724DC85	Voltage_Box	_Voltages	PC77617	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	290.0	118.3
+'724DCB0	Fault_Currents	_Fault Currents	PC77617	<>	<>	<>	-0	9	Wipeout ON	<>	<>	<>	<>
+'724DCCD	Voltage_Box	_Voltages	PC44059	<>	<>	<>	<>	<>	Wipeout On	  |	EWING	386.0	121.5
+'724DCF8	Fault_Currents	_Fault Currents	PC44059	<>	<>	<>	-0	8	Wipeout ON	<>	<>	<>	<>
+'745DB18	Voltage_Box	_Voltages	PC170228	<>	<>	<>	<>	<>	Wipeout On	  |	LEWISTOWN	1348.0	123.3
+'745DB56	Load_Currents	_Currents	R19263	A4.2	B6.1	C17.9	<>	<>	<>	<>	<>	<>	<>
+'745DB75	Fault_Currents	_Fault Currents	R19263	<>	<>	<>	17	6	Wipeout ON	<>	<>	<>	<>
+'745DB99	Load_Currents	_Currents	R20068	A4.1	B6.0	C74.2	<>	<>	<>	<>	<>	<>	<>
+'745DBB8	Fault_Currents	_Fault Currents	R20068	<>	<>	<>	74	6	Wipeout ON	<>	<>	<>	<>
+'745DBDB	Load_Currents	_Currents	R19262	A4.1	B5.9	C-0.1	<>	<>	<>	<>	<>	<>	<>
+'745DBFA	Fault_Currents	_Fault Currents	R19262	<>	<>	<>	-0	5	Wipeout ON	<>	<>	<>	<>
+'745DC1D	Load_Currents	_Currents	R19264	A3.4	B5.2	C1.3	<>	<>	<>	<>	<>	<>	<>
+'745DC3C	Fault_Currents	_Fault Currents	R19264	<>	<>	<>	1	5	Wipeout ON	<>	<>	<>	<>
+'756B4B4	Voltage_Box	_Voltages	PC42900	<>	<>	<>	<>	<>	Wipeout On	  |	LEWISTOWN	659.0	118.8
+'792BB4A	Load_Currents	_Currents	R53	A3.4	B3.2		<>	<>	<>	<>	<>	<>	<>
+'79899F5	Load_Currents	_Currents	R111	C3.7			<>	<>	<>	<>	<>	<>	<>
+'7989A22	Fault_Currents	_Fault Currents	WILLIAMSTOWN	<>	<>	<>	28	0	Wipeout ON	<>	<>	<>	<>
+'7989A3B	Fault_Currents	_Fault Currents	BARING	<>	<>	<>	mismatch	mismatch	Wipeout ON	<>	<>	<>	<>
+'7989A54	Fault_Currents	_Fault Currents	CANTON	<>	<>	<>	126	0	Wipeout ON	<>	<>	<>	<>
+'7989A6D	Fault_Currents	_Fault Currents	KAHOKA	<>	<>	<>	212	0	Wipeout ON	<>	<>	<>	<>
+'7989A86	Fault_Currents	_Fault Currents	LEWISTOWN	<>	<>	<>	182	0	Wipeout ON	<>	<>	<>	<>
+'7989A9F	Fault_Currents	_Fault Currents	NOVELTY	<>	<>	<>	133	0	Wipeout ON	<>	<>	<>	<>
+'7989AB8	Fault_Currents	_Fault Currents	NEWARK	<>	<>	<>	93	0	Wipeout ON	<>	<>	<>	<>
+'7989AD1	Fault_Currents	_Fault Currents	WINCHESTER	<>	<>	<>	139	0	Wipeout ON	<>	<>	<>	<>
+'7989AEA	Fault_Currents	_Fault Currents	EWING	<>	<>	<>	121	0	Wipeout ON	<>	<>	<>	<>
+'7989B03	Fault_Currents	_Fault Currents	ARBELA	<>	<>	<>	57	0	Wipeout ON	<>	<>	<>	<>
+'7989B1C	Fault_Currents	_Fault Currents	TAYLOR	<>	<>	<>	94	0	Wipeout ON	<>	<>	<>	<>
+'7989B35	Load_Currents	_Currents	R110	C4.6			<>	<>	<>	<>	<>	<>	<>
+'7989B54	Load_Currents	_Currents	R101	C6.5			<>	<>	<>	<>	<>	<>	<>
+'7989B73	Load_Currents	_Currents	R102	C13.6			<>	<>	<>	<>	<>	<>	<>
+'79B3068	Load_Currents	_Currents	R20061	C96.8			<>	<>	<>	<>	<>	<>	<>
+'79B308E	Load_Currents	_Currents	R20063	C46.2			<>	<>	<>	<>	<>	<>	<>
+'79B30A8	Load_Currents	_Currents	R20062	C68.5			<>	<>	<>	<>	<>	<>	<>
+'79B311C	Load_Currents	_Currents	R163	C57.8			<>	<>	<>	<>	<>	<>	<>
+'79B31CD	Load_Currents	_Currents	R70	C32.5			<>	<>	<>	<>	<>	<>	<>
+'79B31EC	Load_Currents	_Currents	R71	C11.0			<>	<>	<>	<>	<>	<>	<>
+'79B3206	Load_Currents	_Currents	R65	C14.3			<>	<>	<>	<>	<>	<>	<>
+'79B3220	Load_Currents	_Currents	R59	C49.6			<>	<>	<>	<>	<>	<>	<>
+'79B323A	Load_Currents	_Currents	R64	C27.5			<>	<>	<>	<>	<>	<>	<>
+'79C7EC9	Load_Currents	_Currents	R16843	C55.3			<>	<>	<>	<>	<>	<>	<>
+'79C7EE8	Load_Currents	_Currents	R78	C98.2			<>	<>	<>	<>	<>	<>	<>
+'79C7F02	Load_Currents	_Currents	R77	C19.9			<>	<>	<>	<>	<>	<>	<>
+'79C7F1C	Load_Currents	_Currents	R72	C17.8			<>	<>	<>	<>	<>	<>	<>
+'79C7F5A	Load_Currents	_Currents	R17640 -FDR 1	C43.3			<>	<>	<>	<>	<>	<>	<>
+'79C7F79	Load_Currents	_Currents	R17641 - FDR 2	C32.2			<>	<>	<>	<>	<>	<>	<>
+'79C7F93	Load_Currents	_Currents	R17642 - FDR 3	A0.1	C255.1		<>	<>	<>	<>	<>	<>	<>
+'79C7FEE	Load_Currents	_Currents	R14830	C22.2			<>	<>	<>	<>	<>	<>	<>
+'79C800D	Load_Currents	_Currents	R14831	C13.6			<>	<>	<>	<>	<>	<>	<>
+'79C8027	Load_Currents	_Currents	R14832	C61.1			<>	<>	<>	<>	<>	<>	<>
+'79C8041	Load_Currents	_Currents	R30	C18.4			<>	<>	<>	<>	<>	<>	<>
+'79C80BD	Load_Currents	_Currents	R180				<>	<>	<>	<>	<>	<>	<>
+'79C80DC	Fault_Currents	_Fault Currents	R180	<>	<>	<>	0	0	Wipeout ON	<>	<>	<>	<>
+'79C80FC	Load_Currents	_Currents	R13624	C62.8			<>	<>	<>	<>	<>	<>	<>
+'79C811B	Load_Currents	_Currents	PC9430	B0.7	C8.9		<>	<>	<>	<>	<>	<>	<>
+'79C8135	Load_Currents	_Currents	R13626	C14.1			<>	<>	<>	<>	<>	<>	<>
+'79C814F	Load_Currents	_Currents	R13627	C10.4			<>	<>	<>	<>	<>	<>	<>
+'79E4CD1	Load_Currents	_Currents	R184	C54.9			<>	<>	<>	<>	<>	<>	<>
+'79E4CF0	Load_Currents	_Currents	R16841	C42.4			<>	<>	<>	<>	<>	<>	<>
+'79E4D0A	Load_Currents	_Currents	R182	C34.5			<>	<>	<>	<>	<>	<>	<>
+'79E4D65	Load_Currents	_Currents	R162	C47.7			<>	<>	<>	<>	<>	<>	<>
+'79E4D84	Load_Currents	_Currents	R16842	C73.7			<>	<>	<>	<>	<>	<>	<>
+'79E4D9E	Load_Currents	_Currents	R287	A0.7	B0.1	C77.7	<>	<>	<>	<>	<>	<>	<>
+'7A56E12	Voltage_Box	_Voltages	REG72558	<>	<>	<>	<>	<>	Wipeout On	  |	TAYLOR	524.0	121.0
+'7A56E77	Voltage_Box	_Voltages	REG72559	<>	<>	<>	<>	<>	Wipeout On	  |	ARBELA	655.0	119.9
+'7A56E9C	Voltage_Box	_Voltages	REG72546	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	358.0	116.5
+'7BE0E45	Fault_Currents	_Fault Currents	PC55263	<>	<>	<>	-0	7	Wipeout ON	<>	<>	<>	<>
+'7C278B3	Voltage_Box	_Voltages	REG72578	<>	<>	<>	<>	<>	Wipeout On	  |			
+'7C278D8	Voltage_Box	_Voltages	REG72577	<>	<>	<>	<>	<>	Wipeout On	  |			
+'7C59F6F	Voltage_Box	_Voltages	REG72581	<>	<>	<>	<>	<>	Wipeout On	  |			
+'7C773D0	Voltage_Box	_Voltages	REG72584	<>	<>	<>	<>	<>	Wipeout On	  |			
+'7CA9BD8	Voltage_Box	_Voltages	REG72574	<>	<>	<>	<>	<>	Wipeout On	  |	WINCHESTER	726.0	120.8
+'7CFAA33	Load_Currents	_Currents	SECT09527	A7.9	B11.3	C6.7	<>	<>	<>	<>	<>	<>	<>
+'7CFAA52	Fault_Currents	_Fault Currents	SECT09527	<>	<>	<>	6	11	Wipeout ON	<>	<>	<>	<>
+'7CFAA6B	Load_Currents	_Currents	SECT07539	A16.3	B18.2		<>	<>	<>	<>	<>	<>	<>
+'7CFAA8A	Fault_Currents	_Fault Currents	SECT07539	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'7CFAAA3	Load_Currents	_Currents	SECT07615	A16.3	B18.1		<>	<>	<>	<>	<>	<>	<>
+'7CFAAC2	Fault_Currents	_Fault Currents	SECT07615	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'7CFAAE5	Load_Currents	_Currents	SECT07740	A2.8	B12.9		<>	<>	<>	<>	<>	<>	<>
+'7CFAB04	Fault_Currents	_Fault Currents	SECT07740	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7CFAB27	Load_Currents	_Currents	SECT07244	A13.5	B15.6	C1.0	<>	<>	<>	<>	<>	<>	<>
+'7CFAB46	Fault_Currents	_Fault Currents	SECT07244	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'7CFAB69	Load_Currents	_Currents	SECT06831	A9.2	B10.7		<>	<>	<>	<>	<>	<>	<>
+'7CFAB88	Fault_Currents	_Fault Currents	SECT06831	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7CFABAB	Load_Currents	_Currents	SECT05979	A4.1	B11.5		<>	<>	<>	<>	<>	<>	<>
+'7CFABCA	Fault_Currents	_Fault Currents	SECT05979	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'7CFABED	Load_Currents	_Currents	SECT13335	A7.6	B8.7	C7.9	<>	<>	<>	<>	<>	<>	<>
+'7CFAC0C	Fault_Currents	_Fault Currents	SECT13335	<>	<>	<>	7	8	Wipeout ON	<>	<>	<>	<>
+'7CFAC2F	Load_Currents	_Currents	SECT12195	A14.3	B9.3		<>	<>	<>	<>	<>	<>	<>
+'7CFAC4E	Fault_Currents	_Fault Currents	SECT12195	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7CFAC71	Load_Currents	_Currents	SECT10919	A7.7	B9.1	C2.8	<>	<>	<>	<>	<>	<>	<>
+'7CFAC90	Fault_Currents	_Fault Currents	SECT10919	<>	<>	<>	2	9	Wipeout ON	<>	<>	<>	<>
+'7CFACA9	Load_Currents	_Currents	SECT10385	A13.6	B8.7		<>	<>	<>	<>	<>	<>	<>
+'7CFACC8	Fault_Currents	_Fault Currents	SECT10385	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7CFACEB	Load_Currents	_Currents	SECT10691	A15.5	B11.4		<>	<>	<>	<>	<>	<>	<>
+'7CFAD0A	Fault_Currents	_Fault Currents	SECT10691	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'7CFAD37	Load_Currents	_Currents	SECT16645	A1.1	B6.4		<>	<>	<>	<>	<>	<>	<>
+'7CFAD56	Fault_Currents	_Fault Currents	SECT16645	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7CFAD6F	Load_Currents	_Currents	SECT17055	A1.6	B4.6		<>	<>	<>	<>	<>	<>	<>
+'7CFAD8E	Fault_Currents	_Fault Currents	SECT17055	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'7CFADBB	Load_Currents	_Currents	SECT14477	A0.1	B1.0	C6.2	<>	<>	<>	<>	<>	<>	<>
+'7CFADDA	Fault_Currents	_Fault Currents	SECT14477	<>	<>	<>	6	1	Wipeout ON	<>	<>	<>	<>
+'7CFADFD	Load_Currents	_Currents	SECT14707	A1.0	B3.9		<>	<>	<>	<>	<>	<>	<>
+'7CFAE1C	Fault_Currents	_Fault Currents	SECT14707	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'7CFAE35	Load_Currents	_Currents	SECT14711	A1.0	B3.9		<>	<>	<>	<>	<>	<>	<>
+'7CFAE54	Fault_Currents	_Fault Currents	SECT14711	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'7CFAE80	Load_Currents	_Currents	SECT14936	A4.5	B14.9		<>	<>	<>	<>	<>	<>	<>
+'7CFAE9F	Fault_Currents	_Fault Currents	SECT14936	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'7CFAEC8	Load_Currents	_Currents	SECT16061	A6.3	B15.3	C4.0	<>	<>	<>	<>	<>	<>	<>
+'7CFAEE7	Fault_Currents	_Fault Currents	SECT16061	<>	<>	<>	4	15	Wipeout ON	<>	<>	<>	<>
+'7CFAF09	Load_Currents	_Currents	SECT15905	A9.3	B13.5		<>	<>	<>	<>	<>	<>	<>
+'7CFAF28	Fault_Currents	_Fault Currents	SECT15905	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7D10F45	Load_Currents	_Currents	SECT09675	A3.0	B12.2		<>	<>	<>	<>	<>	<>	<>
+'7D10F64	Fault_Currents	_Fault Currents	SECT09675	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7D10F7D	Load_Currents	_Currents	SECT11262	A9.5	B14.9		<>	<>	<>	<>	<>	<>	<>
+'7D10F9C	Fault_Currents	_Fault Currents	SECT11262	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'7D11008	Load_Currents	_Currents	SECT13007	A3.1	B10.5		<>	<>	<>	<>	<>	<>	<>
+'7D11027	Fault_Currents	_Fault Currents	SECT13007	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7D11082	Load_Currents	_Currents	SECT06399	A10.8	B14.3		<>	<>	<>	<>	<>	<>	<>
+'7D110A1	Fault_Currents	_Fault Currents	SECT06399	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'7D110BA	Load_Currents	_Currents	SECT04632	A9.9	B12.0	C9.9	<>	<>	<>	<>	<>	<>	<>
+'7D110D9	Fault_Currents	_Fault Currents	SECT04632	<>	<>	<>	9	12	Wipeout ON	<>	<>	<>	<>
+'7D11122	Load_Currents	_Currents	SECT29576	A0.4	B9.3		<>	<>	<>	<>	<>	<>	<>
+'7D11141	Fault_Currents	_Fault Currents	SECT29576	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7D11163	Load_Currents	_Currents	SECT28483	A6.0	B9.7		<>	<>	<>	<>	<>	<>	<>
+'7D11187	Fault_Currents	_Fault Currents	SECT28483	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7D111B6	Load_Currents	_Currents	SECT27450	A4.1	B7.8		<>	<>	<>	<>	<>	<>	<>
+'7D111DA	Fault_Currents	_Fault Currents	SECT27450	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7D301DF	Load_Currents	_Currents	SECT29989	A2.5	B3.7	C3.3	<>	<>	<>	<>	<>	<>	<>
+'7D30203	Fault_Currents	_Fault Currents	SECT29989	<>	<>	<>	3	3	Wipeout ON	<>	<>	<>	<>
+'7D30229	Load_Currents	_Currents	SECT28949	A2.5	B6.6		<>	<>	<>	<>	<>	<>	<>
+'7D3024D	Fault_Currents	_Fault Currents	SECT28949	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7D30274	Load_Currents	_Currents	SECT29017	A2.6	B6.7		<>	<>	<>	<>	<>	<>	<>
+'7D30298	Fault_Currents	_Fault Currents	SECT29017	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7D302C4	Load_Currents	_Currents	SECT31761	A6.2	B10.6	C9.8	<>	<>	<>	<>	<>	<>	<>
+'7D302E8	Fault_Currents	_Fault Currents	SECT31761	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7D30305	Load_Currents	_Currents	SECT29505	A1.3	B7.0		<>	<>	<>	<>	<>	<>	<>
+'7D30329	Fault_Currents	_Fault Currents	SECT29505	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7D30371	Load_Currents	_Currents	SECT39445	A11.9	B20.0		<>	<>	<>	<>	<>	<>	<>
+'7D30390	Fault_Currents	_Fault Currents	SECT39445	<>	<>	<>	0	20	Wipeout ON	<>	<>	<>	<>
+'7D303A9	Load_Currents	_Currents	SECT37380	A0.6	B3.9		<>	<>	<>	<>	<>	<>	<>
+'7D303C8	Fault_Currents	_Fault Currents	SECT37380	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'7D303E1	Load_Currents	_Currents	SECT37597	A1.2	B3.7		<>	<>	<>	<>	<>	<>	<>
+'7D30400	Fault_Currents	_Fault Currents	SECT37597	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'7D30419	Load_Currents	_Currents	SECT37603	A1.2	B3.9		<>	<>	<>	<>	<>	<>	<>
+'7D30438	Fault_Currents	_Fault Currents	SECT37603	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'7D30451	Load_Currents	_Currents	SECT38004	A4.5	B6.1	C6.6	<>	<>	<>	<>	<>	<>	<>
+'7D30470	Fault_Currents	_Fault Currents	SECT38004	<>	<>	<>	6	6	Wipeout ON	<>	<>	<>	<>
+'7D30489	Load_Currents	_Currents	SECT35214	A0.9	B3.0		<>	<>	<>	<>	<>	<>	<>
+'7D304A8	Fault_Currents	_Fault Currents	SECT35214	<>	<>	<>	0	3	Wipeout ON	<>	<>	<>	<>
+'7D30540	Load_Currents	_Currents	SECT17760	A6.0	B9.8	C5.2	<>	<>	<>	<>	<>	<>	<>
+'7D3055F	Fault_Currents	_Fault Currents	SECT17760	<>	<>	<>	5	9	Wipeout ON	<>	<>	<>	<>
+'7D50262	Load_Currents	_Currents	SECT17511	A4.3	B6.2		<>	<>	<>	<>	<>	<>	<>
+'7D50281	Fault_Currents	_Fault Currents	SECT17511	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7D502A4	Load_Currents	_Currents	SECT22640	A53.8	B13.0	C1.0	<>	<>	<>	<>	<>	<>	<>
+'7D502C3	Fault_Currents	_Fault Currents	SECT22640	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7D502E6	Load_Currents	_Currents	SECT21893	A58.9	B18.6	C8.4	<>	<>	<>	<>	<>	<>	<>
+'7D50305	Fault_Currents	_Fault Currents	SECT21893	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'7D50327	Load_Currents	_Currents	SECT21097	A13.3	B5.3		<>	<>	<>	<>	<>	<>	<>
+'7D50346	Fault_Currents	_Fault Currents	SECT21097	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'7D5035F	Load_Currents	_Currents	SECT21198	A31.1	B5.7	C6.7	<>	<>	<>	<>	<>	<>	<>
+'7D5037E	Fault_Currents	_Fault Currents	SECT21198	<>	<>	<>	5	5	Wipeout ON	<>	<>	<>	<>
+'7D503AA	Load_Currents	_Currents	SECT20065	A15.3	B6.3		<>	<>	<>	<>	<>	<>	<>
+'7D503C9	Fault_Currents	_Fault Currents	SECT20065	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7D503EC	Load_Currents	_Currents	SECT19720	A4.6	B6.1	C21.2	<>	<>	<>	<>	<>	<>	<>
+'7D5040B	Fault_Currents	_Fault Currents	SECT19720	<>	<>	<>	20	6	Wipeout ON	<>	<>	<>	<>
+'7D5042E	Load_Currents	_Currents	SECT18306	A7.5	B7.0		<>	<>	<>	<>	<>	<>	<>
+'7D5044D	Fault_Currents	_Fault Currents	SECT18306	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7D67836	Load_Currents	_Currents	SECT45941	A10.5	B12.8		<>	<>	<>	<>	<>	<>	<>
+'7D67855	Fault_Currents	_Fault Currents	SECT45941	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7D67882	Load_Currents	_Currents	SECT45771	A9.6	B10.4		<>	<>	<>	<>	<>	<>	<>
+'7D678A1	Fault_Currents	_Fault Currents	SECT45771	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7D678FC	Load_Currents	_Currents	SECT41315	A6.2	B13.2		<>	<>	<>	<>	<>	<>	<>
+'7D6791B	Fault_Currents	_Fault Currents	SECT41315	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7D67934	Load_Currents	_Currents	SECT41103	A7.1	B12.6		<>	<>	<>	<>	<>	<>	<>
+'7D67953	Fault_Currents	_Fault Currents	SECT41103	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7D67980	Load_Currents	_Currents	SECT42535	A6.2	B21.8	C2.5	<>	<>	<>	<>	<>	<>	<>
+'7D6799F	Fault_Currents	_Fault Currents	SECT42535	<>	<>	<>	2	21	Wipeout ON	<>	<>	<>	<>
+'7D679C1	Load_Currents	_Currents	SECT42473	A13.2	B21.8		<>	<>	<>	<>	<>	<>	<>
+'7D679E0	Fault_Currents	_Fault Currents	SECT42473	<>	<>	<>	0	21	Wipeout ON	<>	<>	<>	<>
+'7D679FF	Load_Currents	_Currents	SECT41995	A10.6	B11.6		<>	<>	<>	<>	<>	<>	<>
+'7D67A1E	Fault_Currents	_Fault Currents	SECT41995	<>	<>	<>	3	11	Wipeout ON	<>	<>	<>	<>
+'7D67A4A	Load_Currents	_Currents	SECT43315	A2.1	B9.6		<>	<>	<>	<>	<>	<>	<>
+'7D67A69	Fault_Currents	_Fault Currents	SECT43315	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7D67A82	Load_Currents	_Currents	R20464	A0.5	B2.1		<>	<>	<>	<>	<>	<>	<>
+'7D67AA1	Fault_Currents	_Fault Currents	R20464	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'7D7F353	Load_Currents	_Currents	SECT43914	A3.3	B4.9	C10.1	<>	<>	<>	<>	<>	<>	<>
+'7D7F372	Fault_Currents	_Fault Currents	SECT43914	<>	<>	<>	10	4	Wipeout ON	<>	<>	<>	<>
+'7D7F394	Load_Currents	_Currents	SECT43954	A3.4	B5.2	C1.4	<>	<>	<>	<>	<>	<>	<>
+'7D7F3B8	Fault_Currents	_Fault Currents	SECT43954	<>	<>	<>	1	5	Wipeout ON	<>	<>	<>	<>
+'7D7F3DF	Load_Currents	_Currents	SECT44030	A3.3	B5.1	C2.7	<>	<>	<>	<>	<>	<>	<>
+'7D7F403	Fault_Currents	_Fault Currents	SECT44030	<>	<>	<>	2	5	Wipeout ON	<>	<>	<>	<>
+'7D7F458	Load_Currents	_Currents	SECT02767	A1.9	B7.3	C1.3	<>	<>	<>	<>	<>	<>	<>
+'7D7F477	Fault_Currents	_Fault Currents	SECT02767	<>	<>	<>	1	7	Wipeout ON	<>	<>	<>	<>
+'7D7F4A8	Load_Currents	_Currents	SECT03509	A3.2	B4.3		<>	<>	<>	<>	<>	<>	<>
+'7D7F4CC	Fault_Currents	_Fault Currents	SECT03509	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'7D7F4E9	Load_Currents	_Currents	SECT02130	A3.6	B11.9		<>	<>	<>	<>	<>	<>	<>
+'7D7F50D	Fault_Currents	_Fault Currents	SECT02130	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'7DB894B	Load_Currents	_Currents	SECT31406	A15.9	B14.0		<>	<>	<>	<>	<>	<>	<>
+'7DB896A	Fault_Currents	_Fault Currents	SECT31406	<>	<>	<>	13	14	Wipeout ON	<>	<>	<>	<>
+'7DB8996	Load_Currents	_Currents	SECT34966	A6.1	B9.4		<>	<>	<>	<>	<>	<>	<>
+'7DB89B5	Fault_Currents	_Fault Currents	SECT34966	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7E24A00	Load_Currents	_Currents	SECT08468	A4.2	B4.9	C8.3	<>	<>	<>	<>	<>	<>	<>
+'7E24A1F	Fault_Currents	_Fault Currents	SECT08468	<>	<>	<>	8	4	Wipeout ON	<>	<>	<>	<>
+'7E9CA2C	Load_Currents	_Currents	SECT24812	B0.6	C-12.8		<>	<>	<>	<>	<>	<>	<>
+'7E9CA4B	Fault_Currents	_Fault Currents	SECT24812	<>	<>	<>	-12	0	Wipeout ON	<>	<>	<>	<>
+'7F37602	Voltage_Box	_Voltages	REG72594	<>	<>	<>	<>	<>	Wipeout On	  |			
+'7F37646	Voltage_Box	_Voltages	REG72593	<>	<>	<>	<>	<>	Wipeout On	  |			
+'7F5A53F	Fault_Currents	_Fault Currents	PC101199	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7F5A5F2	Fault_Currents	_Fault Currents	PC13982	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'7F5A60B	Fault_Currents	_Fault Currents	PC51272	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F5A6DB	Fault_Currents	_Fault Currents	PC95896	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'7F5A6F4	Fault_Currents	_Fault Currents	PC130215	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7F5A731	Fault_Currents	_Fault Currents	PC50061	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F5A74A	Fault_Currents	_Fault Currents	PC50082	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F5A7F3	Fault_Currents	_Fault Currents	PC841	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'7F5A80C	Fault_Currents	_Fault Currents	PC66709	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F5A86D	Fault_Currents	_Fault Currents	PC94217	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7F5A886	Fault_Currents	_Fault Currents	PC138073	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'7F5A89F	Fault_Currents	_Fault Currents	PC94663	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'7F5A8B8	Fault_Currents	_Fault Currents	PC3147	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F5A8F5	Fault_Currents	_Fault Currents	PC14012	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'7F5A90E	Fault_Currents	_Fault Currents	PC27884	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7F5A96F	Fault_Currents	_Fault Currents	PC29129	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F971B0	Fault_Currents	_Fault Currents	PC29985	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7F971C9	Fault_Currents	_Fault Currents	PC647	<>	<>	<>	0	16	Wipeout ON	<>	<>	<>	<>
+'7F971E2	Fault_Currents	_Fault Currents	PC20360	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'7F9721F	Fault_Currents	_Fault Currents	PC20694	<>	<>	<>	8	6	Wipeout ON	<>	<>	<>	<>
+'7F9725C	Fault_Currents	_Fault Currents	PC94637	<>	<>	<>	-0	11	Wipeout ON	<>	<>	<>	<>
+'7F97305	Fault_Currents	_Fault Currents	PC1297	<>	<>	<>	-0	6	Wipeout ON	<>	<>	<>	<>
+'7F97342	Fault_Currents	_Fault Currents	PC173	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'7F9735B	Fault_Currents	_Fault Currents	PC1363	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7F97374	Fault_Currents	_Fault Currents	PC27176	<>	<>	<>	-0	8	Wipeout ON	<>	<>	<>	<>
+'7F9738D	Fault_Currents	_Fault Currents	PC93137	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F973A6	Fault_Currents	_Fault Currents	PC869	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7F973BF	Fault_Currents	_Fault Currents	PC19842	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F973D8	Fault_Currents	_Fault Currents	PC92882	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7F97439	Fault_Currents	_Fault Currents	PC100266	<>	<>	<>	0	16	Wipeout ON	<>	<>	<>	<>
+'7F97476	Fault_Currents	_Fault Currents	PC32314	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7F9748F	Fault_Currents	_Fault Currents	PC93071	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F974A8	Fault_Currents	_Fault Currents	PC166862	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F97509	Fault_Currents	_Fault Currents	PC35515	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7F97546	Fault_Currents	_Fault Currents	PC177011	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7F975AD	Fault_Currents	_Fault Currents	PC93209	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'7F975C6	Fault_Currents	_Fault Currents	PC1209	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'7F975DF	Fault_Currents	_Fault Currents	PC13552	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F975F8	Fault_Currents	_Fault Currents	PC14276	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'7F97635	Fault_Currents	_Fault Currents	PC32863	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'7F9764E	Fault_Currents	_Fault Currents	PC38649	<>	<>	<>	0	20	Wipeout ON	<>	<>	<>	<>
+'7F9768B	Fault_Currents	_Fault Currents	PC38313	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'7F976A4	Fault_Currents	_Fault Currents	PC115594	<>	<>	<>	0	16	Wipeout ON	<>	<>	<>	<>
+'7F977BB	Fault_Currents	_Fault Currents	PC11955	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'7F977D4	Fault_Currents	_Fault Currents	PC76789	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7F9783D	Fault_Currents	_Fault Currents	PC49360	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7F9785A	Fault_Currents	_Fault Currents	PC42362	<>	<>	<>	-0	5	Wipeout ON	<>	<>	<>	<>
+'7F97873	Fault_Currents	_Fault Currents	PC52523	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7F9791C	Fault_Currents	_Fault Currents	PC13964	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F97935	Fault_Currents	_Fault Currents	PC110190	<>	<>	<>	0	2	Wipeout ON	<>	<>	<>	<>
+'7F97972	Fault_Currents	_Fault Currents	PC112684	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'7F979AF	Fault_Currents	_Fault Currents	PC76333	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F979EC	Fault_Currents	_Fault Currents	PC42085	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'7F97A05	Fault_Currents	_Fault Currents	PC95899	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7F97A2B	Fault_Currents	_Fault Currents	PC49041	<>	<>	<>	-0	25	Wipeout ON	<>	<>	<>	<>
+'7F97A44	Fault_Currents	_Fault Currents	PC43883	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F97A5D	Fault_Currents	_Fault Currents	PC19592	<>	<>	<>	-0	14	Wipeout ON	<>	<>	<>	<>
+'7F97A76	Fault_Currents	_Fault Currents	PC42938	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'7F97A8F	Fault_Currents	_Fault Currents	PC5335	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7F97AA8	Fault_Currents	_Fault Currents	PC43561	<>	<>	<>	-0	12	Wipeout ON	<>	<>	<>	<>
+'7F97AC1	Fault_Currents	_Fault Currents	PC19436	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F97ADA	Fault_Currents	_Fault Currents	PC44760	<>	<>	<>	-0	8	Wipeout ON	<>	<>	<>	<>
+'7F97AF3	Fault_Currents	_Fault Currents	PC17764	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F97B11	Fault_Currents	_Fault Currents	PC14302	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'7F97B2A	Fault_Currents	_Fault Currents	PC14520	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'7F97BD8	Fault_Currents	_Fault Currents	PC14546	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F97BF1	Fault_Currents	_Fault Currents	PC4675	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7F97C76	Fault_Currents	_Fault Currents	PC45303	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7F97CFB	Fault_Currents	_Fault Currents	PC19569	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7F97D14	Fault_Currents	_Fault Currents	PC18044	<>	<>	<>	-0	7	Wipeout ON	<>	<>	<>	<>
+'7F97D2D	Fault_Currents	_Fault Currents	PC35740	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'7F97D46	Fault_Currents	_Fault Currents	PC129867	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F97D5F	Fault_Currents	_Fault Currents	PC47114	<>	<>	<>	-0	14	Wipeout ON	<>	<>	<>	<>
+'7F97D78	Fault_Currents	_Fault Currents	PC5453	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'7F97D91	Fault_Currents	_Fault Currents	PC94597	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7F97DAA	Fault_Currents	_Fault Currents	PC5446	<>	<>	<>	0	17	Wipeout ON	<>	<>	<>	<>
+'7F97DC3	Fault_Currents	_Fault Currents	PC6011	<>	<>	<>	0	22	Wipeout ON	<>	<>	<>	<>
+'7F97DDC	Fault_Currents	_Fault Currents	PC5968	<>	<>	<>	0	21	Wipeout ON	<>	<>	<>	<>
+'7F97E19	Fault_Currents	_Fault Currents	PC6035	<>	<>	<>	-0	21	Wipeout ON	<>	<>	<>	<>
+'7F97E58	Fault_Currents	_Fault Currents	PC6951	<>	<>	<>	-0	12	Wipeout ON	<>	<>	<>	<>
+'7F97E9A	Fault_Currents	_Fault Currents	PC73572	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'7F97EB3	Fault_Currents	_Fault Currents	PC74569	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7F97ECC	Fault_Currents	_Fault Currents	PC22691	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7F97EE5	Fault_Currents	_Fault Currents	PC78045	<>	<>	<>	0	19	Wipeout ON	<>	<>	<>	<>
+'7F97EFE	Fault_Currents	_Fault Currents	PC78000	<>	<>	<>	0	20	Wipeout ON	<>	<>	<>	<>
+'7F97F44	Fault_Currents	_Fault Currents	PC74835	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7F97F86	Fault_Currents	_Fault Currents	PC73488	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7F97FE7	Fault_Currents	_Fault Currents	PC74731	<>	<>	<>	4	7	Wipeout ON	<>	<>	<>	<>
+'7F98024	Fault_Currents	_Fault Currents	PC68860	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7FBC8B4	Fault_Currents	_Fault Currents	PC79687	<>	<>	<>	2	8	Wipeout ON	<>	<>	<>	<>
+'7FBC8F2	Fault_Currents	_Fault Currents	PC69305	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7FBC90B	Fault_Currents	_Fault Currents	PC68271	<>	<>	<>	-0	12	Wipeout ON	<>	<>	<>	<>
+'7FBC924	Fault_Currents	_Fault Currents	PC6495	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'7FBC93D	Fault_Currents	_Fault Currents	PC70219	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7FBC956	Fault_Currents	_Fault Currents	PC68176	<>	<>	<>	-0	12	Wipeout ON	<>	<>	<>	<>
+'7FBC96F	Fault_Currents	_Fault Currents	PC100771	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7FBC9D0	Fault_Currents	_Fault Currents	PC66778	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'7FBC9E9	Fault_Currents	_Fault Currents	PC61543	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'7FBCA26	Fault_Currents	_Fault Currents	PC174550	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'7FBCA3F	Fault_Currents	_Fault Currents	PC15012	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7FBCA58	Fault_Currents	_Fault Currents	PC63262	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7FBCA71	Fault_Currents	_Fault Currents	PC75484	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7FBCAAE	Fault_Currents	_Fault Currents	PC63097	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7FBCAC7	Fault_Currents	_Fault Currents	PC63146	<>	<>	<>	-0	18	Wipeout ON	<>	<>	<>	<>
+'7FBCAE0	Fault_Currents	_Fault Currents	PC75679	<>	<>	<>	-0	14	Wipeout ON	<>	<>	<>	<>
+'7FBCB82	Fault_Currents	_Fault Currents	PC8560	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'7FBCB9F	Fault_Currents	_Fault Currents	PC86294	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'7FBCC01	Fault_Currents	_Fault Currents	PC61814	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'7FFBFAA	Fault_Currents	_Fault Currents	PC8446	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'7FFBFE7	Fault_Currents	_Fault Currents	PC61166	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'7FFC000	Fault_Currents	_Fault Currents	PC61145	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'8020DD6	Fault_Currents	_Fault Currents	PC57412	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'8020DEF	Fault_Currents	_Fault Currents	PC59810	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'8020E32	Fault_Currents	_Fault Currents	PC110244	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'8020E4B	Fault_Currents	_Fault Currents	PC8678	<>	<>	<>	-0	12	Wipeout ON	<>	<>	<>	<>
+'8020E64	Fault_Currents	_Fault Currents	PC56037	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'8020EE1	Fault_Currents	_Fault Currents	PC89128	<>	<>	<>	-0	4	Wipeout ON	<>	<>	<>	<>
+'8020F1E	Fault_Currents	_Fault Currents	PC59497	<>	<>	<>	-0	13	Wipeout ON	<>	<>	<>	<>
+'8020F37	Fault_Currents	_Fault Currents	PC87851	<>	<>	<>	0	12	Wipeout ON	<>	<>	<>	<>
+'8020F50	Fault_Currents	_Fault Currents	PC8312	<>	<>	<>	0	24	Wipeout ON	<>	<>	<>	<>
+'8020FB1	Fault_Currents	_Fault Currents	PC87903	<>	<>	<>	-0	24	Wipeout ON	<>	<>	<>	<>
+'8020FCA	Fault_Currents	_Fault Currents	PC60215	<>	<>	<>	-0	21	Wipeout ON	<>	<>	<>	<>
+'8020FE3	Fault_Currents	_Fault Currents	PC60004	<>	<>	<>	0	18	Wipeout ON	<>	<>	<>	<>
+'8021002	Fault_Currents	_Fault Currents	PC58257	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'802101B	Fault_Currents	_Fault Currents	PC104088	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'803BB61	Fault_Currents	_Fault Currents	PC7935	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'803BB88	Fault_Currents	_Fault Currents	PC4834	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'803BBE0	Fault_Currents	_Fault Currents	PC82941	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'803BC6F	Fault_Currents	_Fault Currents	PC16290	<>	<>	<>	-0	13	Wipeout ON	<>	<>	<>	<>
+'803BC88	Fault_Currents	_Fault Currents	PC82211	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'803BCA1	Fault_Currents	_Fault Currents	PC85896	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'803BCF9	Fault_Currents	_Fault Currents	PC99070	<>	<>	<>	0	15	Wipeout ON	<>	<>	<>	<>
+'803BD12	Fault_Currents	_Fault Currents	PC84622	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
+'803BD4F	Fault_Currents	_Fault Currents	PC83579	<>	<>	<>	-0	7	Wipeout ON	<>	<>	<>	<>
+'803BD8C	Fault_Currents	_Fault Currents	PC87520	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'803BDA5	Fault_Currents	_Fault Currents	PC15674	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'803BDBE	Fault_Currents	_Fault Currents	PC81372	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'8064376	Fault_Currents	_Fault Currents	PC10845	<>	<>	<>	0	13	Wipeout ON	<>	<>	<>	<>
+'8064393	Fault_Currents	_Fault Currents	PC156766	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'80643F3	Fault_Currents	_Fault Currents	PC16494	<>	<>	<>	0	10	Wipeout ON	<>	<>	<>	<>
+'806440C	Fault_Currents	_Fault Currents	PC39686	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'8064491	Fault_Currents	_Fault Currents	PC40500	<>	<>	<>	1	10	Wipeout ON	<>	<>	<>	<>
+'80644AA	Fault_Currents	_Fault Currents	PC10900	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'80644E7	Fault_Currents	_Fault Currents	PC16765	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'8064500	Fault_Currents	_Fault Currents	PC16604	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'8064519	Fault_Currents	_Fault Currents	PC39001	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'8064665	Fault_Currents	_Fault Currents	PC12235	<>	<>	<>	0	6	Wipeout ON	<>	<>	<>	<>
+'8064682	Fault_Currents	_Fault Currents	PC12276	<>	<>	<>	0	5	Wipeout ON	<>	<>	<>	<>
+'806469B	Fault_Currents	_Fault Currents	PC82516	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'80646B4	Fault_Currents	_Fault Currents	PC4047	<>	<>	<>	-0	10	Wipeout ON	<>	<>	<>	<>
+'80646D1	Fault_Currents	_Fault Currents	PC70558	<>	<>	<>	0	7	Wipeout ON	<>	<>	<>	<>
+'8064737	Fault_Currents	_Fault Currents	PC82550	<>	<>	<>	1	5	Wipeout ON	<>	<>	<>	<>
+'8064750	Fault_Currents	_Fault Currents	PC53834	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'806478D	Fault_Currents	_Fault Currents	PC14496	<>	<>	<>	0	11	Wipeout ON	<>	<>	<>	<>
+'80647CA	Fault_Currents	_Fault Currents	PC66117	<>	<>	<>	-0	5	Wipeout ON	<>	<>	<>	<>
+'80647E3	Fault_Currents	_Fault Currents	PC95847	<>	<>	<>	-0	8	Wipeout ON	<>	<>	<>	<>
+'8064820	Fault_Currents	_Fault Currents	PC28425	<>	<>	<>	0	4	Wipeout ON	<>	<>	<>	<>
+'8064839	Fault_Currents	_Fault Currents	PC77060	<>	<>	<>	0	8	Wipeout ON	<>	<>	<>	<>
+'8064852	Fault_Currents	_Fault Currents	PC11941	<>	<>	<>	0	9	Wipeout ON	<>	<>	<>	<>
+'80F57F4	Fault_Currents	_Fault Currents	PC12847	<>	<>	<>	-0	16	Wipeout ON	<>	<>	<>	<>
+'8195E97	Voltage_Box	_Voltages	PC29129	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	176.0	117.9
+'8206BCA	Voltage_Box	_Voltages	PC1679	<>	<>	<>	<>	<>	Wipeout On	  |	KAHOKA	172.0	121.0
+'8206BF5	Fault_Currents	_Fault Currents	PC1679	<>	<>	<>	0	14	Wipeout ON	<>	<>	<>	<>
