@@ -81,10 +81,10 @@ def main():
 
 def Declutter():
     dir_path = os.getcwd()
-    
+    new_path = os.path.join(dir_path, "EXPORT")
+
     # create "EXPORT" directory if it doesn't already exist
     if 'EXPORT' not in os.listdir(dir_path):
-        new_path = os.path.join(dir_path, "EXPORT")
         os.mkdir(new_path)
 
     # relocate files with specified extensions to /EXPORT
@@ -259,14 +259,14 @@ def DropAccumulator(df):
             b_dict[df.iloc[i, df.columns.get_loc('name')]] = df.iloc[i, df.columns.get_loc('sdropb')]   
             c_dict[df.iloc[i, df.columns.get_loc('name')]] = df.iloc[i, df.columns.get_loc('sdropc')]              
 
-        if df.iloc[i, df.columns.get_loc('phasing')] == "ABC":
+        if df.iloc[i, df.columns.get_loc('phasing')] in ["ABC","ACB","BAC","BCA","CAB","CBA"]:
             df.iloc[i, df.columns.get_loc('accdrop')] = max(df.iloc[i, df.columns.get_loc('sdropa')],\
                 df.iloc[i, df.columns.get_loc('sdropb')],df.iloc[i, df.columns.get_loc('sdropc')])
-        if df.iloc[i, df.columns.get_loc('phasing')] == "AB":
+        if df.iloc[i, df.columns.get_loc('phasing')] in ["AB","BA"]:
             df.iloc[i, df.columns.get_loc('accdrop')] = max(df.iloc[i, df.columns.get_loc('sdropa')], df.iloc[i, df.columns.get_loc('sdropb')])
-        if df.iloc[i, df.columns.get_loc('phasing')] == "AC":
+        if df.iloc[i, df.columns.get_loc('phasing')] in ["AC","CA"]:
             df.iloc[i, df.columns.get_loc('accdrop')] = max(df.iloc[i, df.columns.get_loc('sdropa')], df.iloc[i, df.columns.get_loc('sdropc')])
-        if df.iloc[i, df.columns.get_loc('phasing')] == "BC":
+        if df.iloc[i, df.columns.get_loc('phasing')] in ["BC","CB"]:
             df.iloc[i, df.columns.get_loc('accdrop')] = max(df.iloc[i, df.columns.get_loc('sdropb')], df.iloc[i, df.columns.get_loc('sdropc')])
         if df.iloc[i, df.columns.get_loc('phasing')] == "A":
             df.iloc[i, df.columns.get_loc('accdrop')] = df.iloc[i, df.columns.get_loc('sdropa')]
@@ -414,10 +414,14 @@ def OutputData(e_df, p_df):
     # insert blank columns for separation and readibility
     data.insert(1, "Existing", "  |") 
     data.insert(11, "Proposed", "  |") 
+    data.insert(21, "Version", "") 
+    data.insert(21, "", "") 
 
     headers = ['Names','Existing','Source','Voltage','Acc Drop','Miles','I AØ','I BØ','I CØ','Min(Flt)','Max(Flt)',\
-                       'Proposed','Source','Voltage','Acc Drop','Miles','I AØ','I BØ','I CØ','Min(Flt)','Max(Flt)']
-         
+                       'Proposed','Source','Voltage','Acc Drop','Miles','I AØ','I BØ','I CØ','Min(Flt)','Max(Flt)', '','Version']
+
+    data.iloc[0, data.columns.get_loc('Version')] = "WindMil Data 1.2"
+
     data.to_csv('OUTPUT DATA.csv', index = False, header=headers, encoding='utf-8-sig')
 
 main()

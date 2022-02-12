@@ -28,13 +28,14 @@ attribute_file = None
 def FileLocator():
     # mainloop settings
     root = tk.Tk()
-    root.title('AutoCAD Data 1.1')
+    root.title('AutoCAD Data 1.2')
     root.geometry("700x145")
 
     string_output = tk.StringVar(root, value='No file selected.')
     string_attribute = tk.StringVar(root, value='No file selected.')
 
     # settings window
+    '''
     set_window = tk.Tk()
     set_window.title('Settings')
     set_window.geometry("390x410")
@@ -158,6 +159,7 @@ def FileLocator():
 
 
     bt_set_done = tk.Button(set_window, text="Done", justify = 'left', command=set_done).grid(column=0, row=19)
+    '''
 
 
 
@@ -204,7 +206,9 @@ def FileLocator():
     # main window menu bar
     menubar = tk.Menu(root)
     filemenu = tk.Menu(menubar, tearoff=0)
+    '''
     filemenu.add_command(label = "Settings", command=settings)
+    '''
     filemenu.add_command(label = "Exit", command=root.quit)
     menubar.add_cascade(label="File", menu=filemenu)
     root.config(menu = menubar)

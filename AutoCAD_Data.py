@@ -1,6 +1,7 @@
 import os
 import sys
 import numpy as np
+import pandas as pd
 import time
 import shutil
 from GUI_AutoCAD import *
@@ -8,217 +9,186 @@ from GUI_AutoCAD import *
 start_time = 0
 
 def main():
-    #output_file, attribute_file = FileLocator()
-    output_file = 'C:/Users/aheilman/Documents/GitHub/WindMilData/OUTPUT DATA.csv'
-    attribute_file = 'C:/Users/aheilman/Documents/GitHub/WindMilData/MO23 Work Plan Map.txt'
-
+    output_file, attribute_file = FileLocator()
+    
     global start_time
     start_time = time.time()
 
+    FileCheck(output_file, attribute_file)
+
+    Status("Importing data.")
+    output_data = pd.read_csv(output_file, delimiter=",", comment = None, low_memory=False)
+    attribute_data = pd.read_csv(attribute_file, delimiter="\t", comment = None, low_memory=False)
+
+    VersionCheck(output_data)
+    MoveFiles('DATA', ['.csv', '.txt'])
+
+    BlockCheck(attribute_data)
+    
+    mismatches = MismatchCheck(attribute_data, output_data)
+
+    Status("Updating AutoCAD attribute file with WindMil data.")
+    attribute_data = PopulateData(attribute_data, output_data)
+
+    if len(mismatches) > 0:
+        Status("Updating AutoCAD attribute file with mismatch warnings.")
+        attribute_data = PopulateMismatch(attribute_data, mismatches)
+
+    np.savetxt("OUTPUT ATTRIBUTES.txt", attribute_data, fmt='%s', delimiter='\t')
+    Status("Complete. Use 'OUTPUT ATTRIBUTES.txt' for AutoCAD ATTIN command.")
+
+    print('\n')
+    input("Press Enter to complete.")
+
+
+def PopulateData(attribute_data, output_data):
+
+    df = attribute_data.merge(output_data, how='inner', left_on='DEVICE', right_on='Names')
+    df[['LINE1','LINE2','LINE3','MAX','MIN','VOLTS','DROP','DIFF','DIST']] = "<>"
+    
+    for i in range(0, len(df)):
+        if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Fault_Currents':
+            df.iloc[i, df.columns.get_loc('MAX')] = int(df.iloc[i, df.columns.get_loc('Max(Flt).1')])
+            df.iloc[i, df.columns.get_loc('MIN')] = int(df.iloc[i, df.columns.get_loc('Min(Flt).1')])
+
+        if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Voltage_Box':
+            exst_volt = round(df.iloc[i, df.columns.get_loc('Voltage')], 1)
+            exst_drop = round(df.iloc[i, df.columns.get_loc('Acc Drop')], 1)
+            prop_drop = round(df.iloc[i, df.columns.get_loc('Acc Drop.1')], 1)
+            exst_mile = round(df.iloc[i, df.columns.get_loc('Miles')], 1)
+
+            if np.isnan(exst_volt):
+                df.iloc[i, df.columns.get_loc('VOLTS')] = "-"
+            else:
+                df.iloc[i, df.columns.get_loc('VOLTS')] = exst_volt
+                
+            if np.isnan(exst_drop):
+                df.iloc[i, df.columns.get_loc('DROP')] = "-"
+            else:
+                df.iloc[i, df.columns.get_loc('DROP')] = exst_drop
+
+            if np.isnan(prop_drop):
+                df.iloc[i, df.columns.get_loc('DIFF')] = "-"
+            else:
+                df.iloc[i, df.columns.get_loc('DIFF')] = prop_drop
+
+            if np.isnan(exst_mile):
+                df.iloc[i, df.columns.get_loc('DIST')] = "-"
+            else:
+                df.iloc[i, df.columns.get_loc('DIST')] = exst_mile
+
+        if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Load_Currents':
+            a_current = df.iloc[i, df.columns.get_loc('I AØ')]
+            b_current = df.iloc[i, df.columns.get_loc('I BØ')]
+            c_current = df.iloc[i, df.columns.get_loc('I CØ')]
+
+            if a_current != 0 and not(np.isnan(a_current)):
+                df.iloc[i, df.columns.get_loc('LINE1')] = "A" + str(a_current)
+
+            if b_current != 0 and not(np.isnan(b_current)):
+                if df.iloc[i, df.columns.get_loc('LINE1')] == "<>":
+                    df.iloc[i, df.columns.get_loc('LINE1')] = "B" + str(b_current)
+                elif df.iloc[i, df.columns.get_loc('LINE1')] != "<>":
+                    df.iloc[i, df.columns.get_loc('LINE2')] = "B" + str(b_current)
+
+            if c_current != 0 and not(np.isnan(c_current)):
+                if df.iloc[i, df.columns.get_loc('LINE1')] == "<>":
+                    df.iloc[i, df.columns.get_loc('LINE1')] = "C" + str(c_current)
+                elif df.iloc[i, df.columns.get_loc('LINE2')] == "<>":
+                    df.iloc[i, df.columns.get_loc('LINE2')] = "C" + str(c_current)
+                else:
+                    df.iloc[i, df.columns.get_loc('LINE3')] = "C" + str(c_current)
+
+            # case when existing current all 0 or all null
+            if df.iloc[i, df.columns.get_loc('LINE1')] == "<>" \
+            and df.iloc[i, df.columns.get_loc('LINE2')] == "<>" \
+            and df.iloc[i, df.columns.get_loc('LINE3')] == "<>":
+                df.iloc[i, df.columns.get_loc('LINE1')] = "0.0"
+
+    # slice attribute data, remove output data columns
+    df = df.iloc[:,0:14]
+    return df
+
+
+def PopulateMismatch(df, mismatches):
+    for i in range(0, len(df)):
+        if df.iloc[i, df.columns.get_loc('DEVICE')] in mismatches:
+
+            if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Fault_Currents':
+                df.iloc[i, df.columns.get_loc('MAX')] = "DEVICE"
+                df.iloc[i, df.columns.get_loc('MIN')] = "MISMATCH"
+
+            if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Voltage_Box':
+                df.iloc[i, df.columns.get_loc('VOLTS')] = "DEVICE"
+                df.iloc[i, df.columns.get_loc('DROP')]  = "MISMATCH"
+                df.iloc[i, df.columns.get_loc('DIFF')]  = "CHECK"
+                df.iloc[i, df.columns.get_loc('DIST')]  = "LINK"
+
+            if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Load_Currents':
+                df.iloc[i, df.columns.get_loc('LINE1')] = "DEVICE"
+                df.iloc[i, df.columns.get_loc('LINE2')] = "MISMATCH"
+                df.iloc[i, df.columns.get_loc('LINE3')] = "CHECK"
+    return df
+
+
+def VersionCheck(df):
+    version = df.iloc[0,22]
+
+    if version != "WindMil Data 1.2":
+        Status("ERROR - OUTPUT_DATA.csv not valid. Please use WindMil Data version 1.2")
+        input("Press Enter to exit.")
+        quit()
+    else:
+        pass
+
+
+def FileCheck(output_file, attribute_file):
     if output_file == None or attribute_file == None:
         Status("ERROR - One or more files not selected.")
         input("Press Enter to exit.")
         quit()
-
     else:
-        Status("Importing data.")
-        output_data = np.loadtxt(output_file, dtype='U25', delimiter=",", comments=None, skiprows=3)  # Read in RSL from CSV copy
-        attribute_data = np.loadtxt(attribute_file, dtype='U25', delimiter="\t", comments=None, skiprows=0)  # Read in RSL from CSV copy
-        
-        MoveFiles('DATA', ['.csv', '.txt'])
+        pass
 
 
-        Status("Updating attribute file with model data.")
-        attribute_data, mismatches, mismatch_names = SyncData(output_data, attribute_data)
-        np.savetxt("OUTPUT ATTRIBUTES.txt", attribute_data, fmt='%s', delimiter='\t')
-        print('')
+def BlockCheck(attribute_data):
+    block_types = attribute_data['BLOCKNAME'].unique()
+    valid_block_types = ['Load_Currents', 'Fault_Currents', 'Voltage_Box']
+    invalid_block_types = list(set(block_types) - set(valid_block_types))
 
-        if mismatches == 0:
-            Status("All attribute blocks were linked to model data.")
+    for i in block_types:
+        if i not in valid_block_types:
+            Status("ERROR - One or more block types invalid. Check LISP routine." + \
+                   "\n\t\t\t\tInvalid block types used in map:")
+            for i in invalid_block_types:
+                print("\t\t\t\t\t" + i)
+            input("Press Enter to exit.")
+            quit()
         else:
-            Status(str(mismatches) + " attribute blocks were not linked to model data.  See OUTPUT WARNING - MISMATCH.txt")
-            np.savetxt("OUTPUT WARNING - MISMATCH.txt", mismatch_names, fmt='%s', delimiter='\t')
-
-        negative_count, negative_names = NegPhaseCurrents(attribute_data)
-        if negative_count == 0:
-            Status("No instances of negative phase current in attribute file.")
-        else:
-            Status(str(negative_count) + " instances of negative phase current in attribute file. See OUTPUT WARNING - NEGATIVE CURRENT.txt")
-            np.savetxt("OUTPUT WARNING - NEGATIVE CURRENT.txt", negative_names, fmt='%s', delimiter='\t')
+            pass 
+    Status("Valid 'BLOCKNAME' was used for each attribute block.") 
 
 
-        Status("Complete.")
+def MismatchCheck(attribute_data, output_data):
+    attribute_file_device_list = attribute_data['DEVICE']
+    mismatches = []
 
-        print('\n')
-        input("Press Enter to complete.")
+    matched = attribute_data.merge(output_data, how='inner', left_on='DEVICE', right_on='Names')
+    matched_device_list = matched['DEVICE']
 
+    qty_total = attribute_data.shape[0]
+    qty_matched = matched.shape[0]
+    qty_mismatch = qty_total - qty_matched
 
-def SyncData(output_data, attribute_data):
-    mismatch_names = []
+    if qty_mismatch == 0:
+        Status("All 'DEVICE' links were matched to WindMil data.")
+    else:
+        mismatches = list(set(attribute_file_device_list) - set(matched_device_list))
+        Status(str(qty_mismatch) + " attribute block(s) were not linked to WindMil data. See file: OUTPUT WARNING - MISMATCH")
+        np.savetxt("OUTPUT WARNING - MISMATCH.txt", mismatches, fmt='%s', delimiter='\t')
 
-    # column order changes, assign column number by header
-    columns = attribute_data[0,:]
-    for i in range(0,len(columns)):
-        if columns[i] == atttxt_block:
-            attcol_block = i
-        if columns[i] == atttxt_name:
-            attcol_name = i
-        if columns[i] == atttxt_max:
-            attcol_max = i
-        if columns[i] == atttxt_min:
-            attcol_min = i
-        if columns[i] == atttxt_i1:
-            attcol_i1 = i
-        if columns[i] == atttxt_i2:
-            attcol_i2 = i
-        if columns[i] == atttxt_i3:
-            attcol_i3 = i
-        if columns[i] == atttxt_volt:
-            attcol_volt = i
-        if columns[i] == atttxt_edrop:
-            attcol_edrop = i
-        if columns[i] == atttxt_pdrop:
-            attcol_pdrop = i
-        if columns[i] == atttxt_miles:
-            attcol_miles = i
+    return mismatches
 
-    # Standard
-    outcol_name     = 0 #column 1
-    outcol_volt     = 1 #column 2
-    outcol_edrop    = 2 #column 3
-    outcol_miles    = 3 #column 4
-    outcol_ia       = 4 #column 5
-    outcol_ib       = 5 #column 6
-    outcol_ic       = 6 #column 7
-    outcol_pdrop    = 10 #column 11
-    outcol_min      = 15 #column 16
-    outcol_max      = 16 #column 17
-
-    mismatches = 0      # count how many elements were not found in model data
-
-    for i in range(1, len(attribute_data)):
-        match = 0       # match indicator new for each attribute
-        Counter(i, len(attribute_data))
-        for j in range(0, len(output_data)):
-
-            if attribute_data[i, attcol_name] == output_data[j, outcol_name]:
-                match = 1       # match indication when element found in model data
-
-                # sync data for Fault_Currents blocks
-                if attribute_data[i, attcol_block] == Fault_Currents:
-                    # max fault current
-                    if output_data[j, outcol_max] == "nan":
-                        attribute_data[i, attcol_max] = "-"
-                    else:
-                        temp_max = output_data[j, outcol_max]
-                        attribute_data[i, attcol_max] =  temp_max[:-2] #removes the ".0" from string
-
-                    # min fault current
-                    if output_data[j, outcol_min] == "nan":
-                        attribute_data[i, attcol_min] = "-"
-                    else:
-                        temp_min = output_data[j, outcol_min]
-                        attribute_data[i, attcol_min] =  temp_min[:-2] #removes the ".0" from string
-
-                # sync data for Load_Currents blocks
-                if attribute_data[i, attcol_block] == Load_Currents:
-                    attribute_data[i, attcol_i1] = "" # clear existing data
-                    attribute_data[i, attcol_i2] = "" # clear existing data
-                    attribute_data[i, attcol_i3] = "" # clear existing data
-
-                    if (output_data[j, outcol_ia] != "0.0" and output_data[j, outcol_ia] != "nan" and output_data[j, outcol_ia] != "-0.0" and output_data[j, outcol_ia] != "0"):
-                        attribute_data[i, attcol_i1] = "A" + output_data[j, outcol_ia]
-                    if (output_data[j, outcol_ib] != "0.0" and output_data[j, outcol_ib] != "nan" and output_data[j, outcol_ib] != "-0.0" and output_data[j, outcol_ib] != "0"):
-                        if attribute_data[i, attcol_i1] == "":
-                            attribute_data[i, attcol_i1] = "B" + output_data[j, outcol_ib]
-                        else:
-                            attribute_data[i, attcol_i2] = "B" + output_data[j, outcol_ib]
-                    if (output_data[j, outcol_ic] != "0.0" and output_data[j, outcol_ic] != "nan" and output_data[j, outcol_ic] != "-0.0" and output_data[j, outcol_ic] != "0"):
-                        if attribute_data[i, attcol_i1] == "":
-                            attribute_data[i, attcol_i1] = "C" + output_data[j, outcol_ic]
-                        else:
-                            if attribute_data[i, attcol_i2] == "":
-                                attribute_data[i, attcol_i2] = "C" + output_data[j, outcol_ic]
-                            else:
-                                attribute_data[i, attcol_i3] = "C" + output_data[j, outcol_ic]
-
-                # sync data for Voltage_Box blocks
-                if attribute_data[i, attcol_block] == Voltage_Box:
-                    # voltage
-                    if output_data[j, outcol_volt] == "nan":
-                        attribute_data[i, attcol_volt] = "-"
-                    else:
-                        attribute_data[i, attcol_volt] = output_data[j, outcol_volt]
-
-                    # existing voltage drop
-                    if output_data[j, outcol_edrop] == "nan":
-                        attribute_data[i, attcol_edrop] = "-"
-                    else:
-                        attribute_data[i, attcol_edrop] = output_data[j, outcol_edrop]
-
-                    # proposed voltage drop
-                    if output_data[j, outcol_pdrop] == "nan":
-                        attribute_data[i, attcol_pdrop] = "-"
-                    else:
-                        attribute_data[i, attcol_pdrop] = output_data[j, outcol_pdrop]
-
-                    # existing miles
-                    if output_data[j, outcol_miles] == "nan":
-                        attribute_data[i, attcol_miles] = "-"
-                    else:
-                        attribute_data[i, attcol_miles] = output_data[j, outcol_miles]
-
-                break
-
-
-        # assign mismatch to appropriate fields attribute not in model data (match == 0)
-        if match == 0:
-            mismatches = mismatches + 1
-            if attribute_data[i, attcol_block] == Fault_Currents:
-                attribute_data[i, attcol_max] = Mismatch_Val
-                attribute_data[i, attcol_min] = Mismatch_Val
-            if attribute_data[i, attcol_block] == Load_Currents:
-                attribute_data[i, attcol_i1] = Mismatch_Val
-                attribute_data[i, attcol_i2] = Mismatch_Val
-                attribute_data[i, attcol_i3] = Mismatch_Val
-            if attribute_data[i, attcol_block] == Voltage_Box:
-                attribute_data[i, attcol_volt] = Mismatch_Val
-                attribute_data[i, attcol_edrop] = Mismatch_Val
-                attribute_data[i, attcol_pdrop] = Mismatch_Val
-                attribute_data[i, attcol_miles] = Mismatch_Val
-
-            mismatch_names.append(attribute_data[i, attcol_name])
-
-    return attribute_data, mismatches, mismatch_names
-
-def NegPhaseCurrents(attribute_data):
-    negative_count = 0
-    negative_names = []
-
-    # find columns pertaining to phase currents
-    columns = attribute_data[0,:]
-    for i in range(0, len(columns)):
-        if columns[i] == atttxt_name:
-            attcol_name = i
-        if columns[i] == atttxt_i1:
-            attcol_i1 = i
-        if columns[i] == atttxt_i2:
-            attcol_i2 = i
-        if columns[i] == atttxt_i3:
-            attcol_i3 = i
-
-    for i in range(0, len(attribute_data)):
-        if '-' in attribute_data[i, attcol_i1]:
-            negative_count = negative_count + 1
-            negative_names.append(attribute_data[i, attcol_name])
-        if '-' in attribute_data[i, attcol_i2]:
-            negative_count = negative_count + 1
-            negative_names.append(attribute_data[i, attcol_name])
-        if '-' in attribute_data[i, attcol_i3]:
-            negative_count = negative_count + 1
-            negative_names.append(attribute_data[i, attcol_name])
-
-    return negative_count, negative_names
 
 def Status(text):
     global start_time
@@ -229,15 +199,13 @@ def Status(text):
     sys.stdout.write(text)
     sys.stdout.write('\n')
 
-def Counter(i, n):
-    sys.stdout.write('\r')
-    sys.stdout.write('            ')
-    sys.stdout.write(str(i + 1))
-    sys.stdout.write(' / ')
-    sys.stdout.write(str(n))
-    sys.stdout.write(' attribute blocks')
 
 def MoveFiles(new_dir, extensions):
+    '''
+    Creates new directory 'new_dir'
+    Moves all files in working directory to new directory that
+    have extension types in the 'extensions' list.
+    '''
     dir_path = os.getcwd()
     new_path = os.path.join(dir_path, new_dir)
 
@@ -251,5 +219,6 @@ def MoveFiles(new_dir, extensions):
         for file in files:
             if file.endswith(i):
                 shutil.move(os.path.join(dir_path, file), os.path.join(new_path, file))
+
 
 main()
