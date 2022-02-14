@@ -21,7 +21,6 @@ def main():
     attribute_data = pd.read_csv(attribute_file, delimiter="\t", comment = None, low_memory=False)
 
     VersionCheck(output_data)
-    MoveFiles('DATA', ['.csv', '.txt'])
 
     BlockCheck(attribute_data)
     
@@ -34,7 +33,11 @@ def main():
         Status("Updating AutoCAD attribute file with mismatch warnings.")
         attribute_data = PopulateMismatch(attribute_data, mismatches)
 
-    np.savetxt("OUTPUT ATTRIBUTES.txt", attribute_data, fmt='%s', delimiter='\t')
+    MoveFiles('DATA', ['.csv', '.txt'])
+
+    headers = ColumnsToHeader(attribute_data)
+    np.savetxt("OUTPUT ATTRIBUTES.txt", attribute_data, fmt='%s', delimiter='\t', header=headers, comments='')
+
     Status("Complete. Use 'OUTPUT ATTRIBUTES.txt' for AutoCAD ATTIN command.")
 
     print('\n')
@@ -43,13 +46,21 @@ def main():
 
 def PopulateData(attribute_data, output_data):
 
-    df = attribute_data.merge(output_data, how='inner', left_on='DEVICE', right_on='Names')
+    df = attribute_data.merge(output_data, how='left', left_on='DEVICE', right_on='Names')
     df[['LINE1','LINE2','LINE3','MAX','MIN','VOLTS','DROP','DIFF','DIST']] = "<>"
     
     for i in range(0, len(df)):
         if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Fault_Currents':
-            df.iloc[i, df.columns.get_loc('MAX')] = int(df.iloc[i, df.columns.get_loc('Max(Flt).1')])
-            df.iloc[i, df.columns.get_loc('MIN')] = int(df.iloc[i, df.columns.get_loc('Min(Flt).1')])
+            
+            if np.isnan(df.iloc[i, df.columns.get_loc('Max(Flt).1')]):
+                df.iloc[i, df.columns.get_loc('MAX')] = "-"
+            else:
+                df.iloc[i, df.columns.get_loc('MAX')] = int(df.iloc[i, df.columns.get_loc('Max(Flt).1')])
+
+            if np.isnan(df.iloc[i, df.columns.get_loc('Min(Flt).1')]):
+                df.iloc[i, df.columns.get_loc('MIN')] = "-"
+            else:
+                df.iloc[i, df.columns.get_loc('MIN')] = int(df.iloc[i, df.columns.get_loc('Min(Flt).1')])
 
         if df.iloc[i, df.columns.get_loc('BLOCKNAME')] == 'Voltage_Box':
             exst_volt = round(df.iloc[i, df.columns.get_loc('Voltage')], 1)
@@ -82,27 +93,33 @@ def PopulateData(attribute_data, output_data):
             b_current = df.iloc[i, df.columns.get_loc('I BØ')]
             c_current = df.iloc[i, df.columns.get_loc('I CØ')]
 
+            # replace AutoCAD null symbol "<>" with empty string
+            df.iloc[i, df.columns.get_loc('LINE1')] = ""
+            df.iloc[i, df.columns.get_loc('LINE2')] = ""
+            df.iloc[i, df.columns.get_loc('LINE3')] = ""
+
+            # populate current if non-zero and non-null
             if a_current != 0 and not(np.isnan(a_current)):
                 df.iloc[i, df.columns.get_loc('LINE1')] = "A" + str(a_current)
 
             if b_current != 0 and not(np.isnan(b_current)):
-                if df.iloc[i, df.columns.get_loc('LINE1')] == "<>":
+                if df.iloc[i, df.columns.get_loc('LINE1')] == "":
                     df.iloc[i, df.columns.get_loc('LINE1')] = "B" + str(b_current)
-                elif df.iloc[i, df.columns.get_loc('LINE1')] != "<>":
+                elif df.iloc[i, df.columns.get_loc('LINE1')] != "":
                     df.iloc[i, df.columns.get_loc('LINE2')] = "B" + str(b_current)
 
             if c_current != 0 and not(np.isnan(c_current)):
-                if df.iloc[i, df.columns.get_loc('LINE1')] == "<>":
+                if df.iloc[i, df.columns.get_loc('LINE1')] == "":
                     df.iloc[i, df.columns.get_loc('LINE1')] = "C" + str(c_current)
-                elif df.iloc[i, df.columns.get_loc('LINE2')] == "<>":
+                elif df.iloc[i, df.columns.get_loc('LINE2')] == "":
                     df.iloc[i, df.columns.get_loc('LINE2')] = "C" + str(c_current)
                 else:
                     df.iloc[i, df.columns.get_loc('LINE3')] = "C" + str(c_current)
 
-            # case when existing current all 0 or all null
-            if df.iloc[i, df.columns.get_loc('LINE1')] == "<>" \
-            and df.iloc[i, df.columns.get_loc('LINE2')] == "<>" \
-            and df.iloc[i, df.columns.get_loc('LINE3')] == "<>":
+            # prevent disappearing blocks - instance when all three lines are zero or null
+            if df.iloc[i, df.columns.get_loc('LINE1')] == "" \
+            and df.iloc[i, df.columns.get_loc('LINE2')] == "" \
+            and df.iloc[i, df.columns.get_loc('LINE3')] == "":
                 df.iloc[i, df.columns.get_loc('LINE1')] = "0.0"
 
     # slice attribute data, remove output data columns
@@ -132,8 +149,13 @@ def PopulateMismatch(df, mismatches):
 
 
 def VersionCheck(df):
-    version = df.iloc[0,22]
+    # extract version
+    if df.shape[1] > 20:
+        version = df.iloc[0,22]
+    else:
+        version = 'WindMil Data 1.1'
 
+    # check version
     if version != "WindMil Data 1.2":
         Status("ERROR - OUTPUT_DATA.csv not valid. Please use WindMil Data version 1.2")
         input("Press Enter to exit.")
@@ -219,6 +241,17 @@ def MoveFiles(new_dir, extensions):
         for file in files:
             if file.endswith(i):
                 shutil.move(os.path.join(dir_path, file), os.path.join(new_path, file))
+
+
+def ColumnsToHeader(df):
+    header_list = df.columns.values.astype(str)
+    header_string = header_list[0]
+
+    # string of headers, tab delimited
+    for i in range(1, len(header_list)):
+        header_string += '\t' + header_list[i]
+
+    return header_string
 
 
 main()

@@ -161,16 +161,16 @@ def ImportRSL(file_name):
 
     return df
 
-def ImportSTD(data, file_name):
+def ImportSTD(rsl_data, file_name):
     # create a .csv copy of the file
     file_csv = file_name[:-4] + ".csv"
     shutil.copyfile(file_name, file_csv)
 
     df = pd.read_csv(file_csv, delimiter=",", comment = None, skiprows = 1, usecols = (0,1), names = ('name','device'))
-    df = pd.merge(data, df, on='name', how='left')
+    df = pd.merge(rsl_data, df, on='name', how='right')
 
     # check for empty cells in matched column. if one exists, then flag an error
-    if len(np.where(pd.isnull(df.device))[0]) > 0:
+    if len(np.where(pd.isnull(df.parent))[0]) > 0:
         Status("ERROR - RSL and STD files do not match. Ensure files were exported from model simultaneously.")
         input("PROGRAM TERMINATED")
         quit()
