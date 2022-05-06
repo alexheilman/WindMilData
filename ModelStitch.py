@@ -100,6 +100,8 @@ def Stitch(sum_data, win_data, sum_subs, win_subs):
     headers = ['Names','Existing','Source','Voltage','Acc Drop','Miles','I AØ','I BØ','I CØ','Min(Flt)','Max(Flt)',\
                        'Proposed','Source','Voltage','Acc Drop','Miles','I AØ','I BØ','I CØ','Min(Flt)','Max(Flt)', '','Version']
 
+    df.iloc[0, df.columns.get_loc('Version')] = "WindMil Data 1.2"
+
     df.to_csv('OUTPUT DATA_STITCHED.csv', index = False, header=headers, encoding='utf-8-sig') 
 
 

@@ -166,7 +166,7 @@ def ImportSTD(rsl_data, file_name):
     file_csv = file_name[:-4] + ".csv"
     shutil.copyfile(file_name, file_csv)
 
-    df = pd.read_csv(file_csv, delimiter=",", comment = None, skiprows = 1, usecols = (0,1), names = ('name','device'))
+    df = pd.read_csv(file_csv, delimiter=",", comment = None, skiprows = 1, usecols = (0,1), names = ('name','device'), encoding = 'ISO-8859-1')
     df = pd.merge(rsl_data, df, on='name', how='right')
 
     # check for empty cells in matched column. if one exists, then flag an error
