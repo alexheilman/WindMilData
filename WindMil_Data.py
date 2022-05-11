@@ -166,28 +166,33 @@ def ImportSTD(rsl_data, file_name):
     file_csv = file_name[:-4] + ".csv"
     shutil.copyfile(file_name, file_csv)
 
-    df = pd.read_csv(file_csv, delimiter=",", comment = None, skiprows = 1, usecols = (0,1), names = ('name','device'), encoding = 'ISO-8859-1')
-    df = pd.merge(rsl_data, df, on='name', how='right')
+    # for nodes (device=8) read in columns 27,28,29 (phase-specific parents) of std file
+    df = pd.read_csv(file_csv, delimiter=",", comment = None, skiprows = 1, low_memory=False,\
+        usecols = (0,1,27,28,29), names = ('name','device','parenta','parentb','parentc'), encoding = 'ISO-8859-1')
+    # left merge to preserve the ordering of the rsl file
+    df = pd.merge(rsl_data, df, on='name', how='left')
+    # for subset exports - ignore rsl entries without std file data
+    df = df[df['device'].notnull()]
 
     # check for empty cells in matched column. if one exists, then flag an error
     if len(np.where(pd.isnull(df.parent))[0]) > 0:
         Status("ERROR - RSL and STD files do not match. Ensure files were exported from model simultaneously.")
         input("PROGRAM TERMINATED")
         quit()
+  
+    # delete extraneous data for non-nodes
+    df.loc[df['device'] != 8, 'parenta'] = ''
+    df.loc[df['device'] != 8, 'parentb'] = ''
+    df.loc[df['device'] != 8, 'parentc'] = ''
 
-    # initialize phase-specific parent as the element's parent
-    df['parenta'] = df['parent']
-    df['parentb'] = df['parent']
-    df['parentc'] = df['parent']
-
-    # for nodes (device=8) read in columns 27,28,29 (phase-specific parents) of std file
-    # overwrite a,b,c parents for all nodes using std file data
+    # relabel device type for nodes with no multi-parent information
+    # if a & b & c parent info is null > non-multi-parent node
     for i in np.where(df['device'] == 8)[0]:
-        temp = np.loadtxt(file_csv, dtype='U25', delimiter=",", comments=None, \
-                          usecols=(0, 1, 27, 28, 29), skiprows=i+1, max_rows=1) # only read one row
-        df.iloc[i, df.columns.get_loc('parenta')] = temp[2] # node's A parent
-        df.iloc[i, df.columns.get_loc('parentb')] = temp[3] # node's B parent
-        df.iloc[i, df.columns.get_loc('parentc')] = temp[4] # node's C parent
+        if pd.isnull(df.iloc[i, df.columns.get_loc('parenta')]) \
+            and pd.isnull(df.iloc[i, df.columns.get_loc('parentb')]) \
+            and pd.isnull(df.iloc[i, df.columns.get_loc('parentc')]):
+
+            df.iloc[i, df.columns.get_loc('device')] = '8_non-multi'
 
     os.remove(file_csv)
     return df
@@ -232,9 +237,12 @@ def DropAccumulator(df):
     node_count = len(np.where(df['device'] == 8)[0])
 
     for i in np.where(df['device'] == 8)[0]:
+        node_name = df.iloc[i, df.columns.get_loc('name')]
+        warning_text = node_name + ' - Time intensive nodes calculated first.'
+
         Counter(i, len(df))
         sys.stdout.write('\t')
-        sys.stdout.write('*NODE* - Time intensive nodes calculated first.')
+        sys.stdout.write(warning_text)
 
         NodeDropAccumulator(df, i)
 
@@ -306,14 +314,14 @@ def NodeDropAccumulator(df, x):
                     break
 
         # quit if no phase parent exists (2-Phase nodes have a '' parent)
-        if chain_name_a[-1] == '':
+        if chain_name_a[-1] == '' or pd.isnull(chain_name_a[-1]):
             chain_drop_a = [0,0]
             break
 
         # quit once root is hit
         if chain_name_a[-1] == 'ROOT':
             break
-
+        print(chain_name_a)
     # B-Phase --------------------------------------------------------------------------------------------------------
     # initial parent-child relationship
     chain_name_b = [df.iloc[x, df.columns.get_loc('name')], df.iloc[x, df.columns.get_loc('parentb')]]                          
@@ -338,7 +346,7 @@ def NodeDropAccumulator(df, x):
                     break
 
         # quit if no phase parent exists (2-Phase nodes have a '' parent)
-        if chain_name_b[-1] == '':
+        if chain_name_b[-1] == '' or pd.isnull(chain_name_b[-1]):
             chain_drop_b = [0,0]
             break
 
@@ -370,14 +378,13 @@ def NodeDropAccumulator(df, x):
                     break
 
         # quit if no phase parent exists (2-Phase nodes have a '' parent)
-        if chain_name_c[-1] == '':
+        if chain_name_c[-1] == '' or pd.isnull(chain_name_c[-1]):
             chain_drop_c = [0,0]
             break
 
         # quit once root is hit
         if chain_name_c[-1] == 'ROOT':
             break
-
 
     # sum drop from source to element for accumulated voltage drop
     df.iloc[x, df.columns.get_loc('sdropa')] = sum(chain_drop_a)         
